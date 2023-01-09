@@ -1,0 +1,15 @@
+@import "components/mixins.scss";
+@import "scss_globals/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.buttonContainer {
+	@include flex_center();
+	@include flex_center_full_w_h();
+
+    width: 80%;
+	button {
+		margin: 0.8rem;
+	}
+}

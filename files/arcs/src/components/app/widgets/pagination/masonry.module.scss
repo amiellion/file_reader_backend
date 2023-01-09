@@ -1,0 +1,49 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	margin: auto;
+}
+
+.feed_grid {
+	width: 100%;
+	padding: 3%;
+	display: flex;
+	overflow: visible;
+	flex-wrap: wrap;
+	flex-direction: row;
+	.feed_grid__col {
+		margin-top: 15px;
+		padding-left: 50px; /* gutter size */
+		background-clip: border-box;
+		overflow: visible;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		gap: 25px;
+		width: max-content !important;
+	}
+
+	@media screen and (max-width: 1333px) {
+		display: flex;
+		overflow: visible;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0; /* gutter size offset */
+
+
+		#pending-entries .feed_grid__col {
+			margin-left: 0px;
+		}
+
+		.feed_grid__col {
+			padding-left: 0;
+			// margin-left: -25%;
+            width: 100%!important;
+		}
+	}
+}

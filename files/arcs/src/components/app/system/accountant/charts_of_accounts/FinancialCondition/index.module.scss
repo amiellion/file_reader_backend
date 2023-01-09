@@ -1,0 +1,19 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-direction: column;
+	gap: 25px 50px;
+
+	.card_title {
+		margin: 8px 0;
+		@extend .subheading1bold;
+		color: $arcs_neutral900;
+	}
+}

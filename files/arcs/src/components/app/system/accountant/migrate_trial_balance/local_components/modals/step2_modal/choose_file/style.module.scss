@@ -1,0 +1,39 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__container--migrate-trial-balance {
+
+    .__text--step-title {
+        @extend .body_large_semibold;
+        text-align: left;
+        color: $arcs_primary300;
+        margin: 0;
+    }
+
+    .__text--title {
+        @extend .heading2;
+        text-align: left;
+        color: $arcs_neutral900;
+        margin: 0;
+    }
+
+    .__text--description {
+        @extend .body_large_regular;
+        text-align: left;
+        color: $arcs_neutral900;
+        max-width: 479px;
+    }
+
+    .container__button {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px 25px;
+
+        .button__modal {
+            width: max-content;
+        }
+    }
+}

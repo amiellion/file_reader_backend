@@ -1,0 +1,89 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.input_group {
+    @extend .caption_large_semibold;
+
+    & input,
+    & textarea {
+        // color: red;
+        background-color: $arcs_neutral50  !important;
+    }
+}
+
+.radioGroup {
+    gap: 15px 15px;
+}
+
+// styles for new onboarding input group - not yet finalized - george @ 05/20/22
+.coop-reg {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+
+    .__heading {
+        @extend .heading1small;
+        color: $arcs_neutral900;
+        margin-top: -20px;
+    }
+
+    .__details {
+        @extend .body_small_regular;
+        color: $arcs_neutral700;
+        margin-top: 20px;
+    }
+
+}
+
+// inital styles input group radio
+.input_group_radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    // background-color: red;
+
+
+    label {
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        height: max-content;
+
+        // width: 100%;
+        // background-color: white;
+        // text-align: center;
+    }
+
+    label.ant-form-item-required {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+    }
+
+    .__radiorow {
+        // padding-left: 60px !important;
+        display: flex;
+        align-items: space;
+        justify-content: space-between;
+    }
+
+    .__radiocol {
+        display: block;
+        margin: 0 3px;
+        // background-color: green;
+    }
+
+    .__radiovalue {
+        display: inline-block;
+        @extend .subheading1regular;
+        color: $arcs_neutral900;
+    }
+}

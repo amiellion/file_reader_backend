@@ -1,0 +1,32 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.form_outer_title {
+		@extend .heading1;
+		color: $arcs_neutral900;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 1em;
+		// padding-right: 3em;
+	}
+
+	.form_inner_title {
+		@extend .body_large_semibold;
+		color: $arcs_neutral900;
+	}
+
+	.sign_up_disclaimer {
+		width: 600px;
+		text-align: center;
+		margin: 5px auto;
+	}
+}

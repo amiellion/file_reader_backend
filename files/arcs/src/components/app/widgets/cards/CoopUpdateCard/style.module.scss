@@ -1,0 +1,73 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+#coopupdate-card {
+	box-shadow: 0px 5px 16px #e5e5e5;
+	border-radius: 10px;
+	margin: 30px 150px 10px 10px;
+	width: 70%;
+    padding: 10px;
+
+    .__position {
+        @extend .caption_large_regular;
+		color: #7F7F99;
+		margin-top: -4px;
+		text-align: left;
+	}
+
+    .__name {
+        @extend .caption_large_semibold;
+        color: #30304d;
+        text-align: left;
+    }
+
+    .__image img {
+		padding-top:10px;
+        margin: 10px auto;
+        object-fit: fill;
+	}
+
+    .__title{
+        font-size: 20px;
+        font-weight: bold;
+        color: #30304d;
+        margin-bottom: -10px;
+        margin-top: 10px;
+    }
+
+    .__details {
+		@extend .body_small_regular;
+		color: #555566;
+		padding: 20px 0px 20px 0px;
+	}
+
+    .__date {
+		@extend .footer_text_regular;
+		color: #7f7f99;
+		padding: 10px 0px 10px 0px;
+	}
+    
+}
+
+.limit_text {
+    max-width: max-content;
+    display:flex;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+/*### Mobile Responsiveness ###*/
+@media (max-width: 768px) {
+	#coopupdate-card {
+		margin: 40px 0px 10px 10px;
+		width: 100%;
+	}
+	.__coopavatar{
+		margin-right: 20px;
+	}
+}
+
+

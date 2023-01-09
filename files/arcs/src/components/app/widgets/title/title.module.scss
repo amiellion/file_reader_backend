@@ -1,0 +1,20 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	width: 100%;
+	.title {
+		@extend .heading1;
+		text-align: left;
+		color: $arcs_neutral900;
+	}
+
+	#divider_container {
+		width: 100%;
+		background-color: $arcs_neutral500;
+	}
+	#divider_container > * {
+		margin-bottom: 4rem;
+	}
+}

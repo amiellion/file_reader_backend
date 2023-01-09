@@ -1,0 +1,153 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    padding: rem(50) rem(30);
+    width: 100%;
+    max-width: 750px;
+
+    .refer_title {
+        @extend .heading1;
+        color: $arcs_neutral900;
+
+        @media (max-width: 767px) {
+            font-size: 40px !important;
+        }
+    }
+
+    .refer_text {
+        @extend .body_large_regular;
+        color: $arcs_neutral900;
+        text-align: center;
+    }
+
+    .refer_subtitle {
+        @extend .body_large_regular;
+        color: $arcs_primary300;
+        text-align: center;
+    }
+
+    .button_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .button {
+            max-width: 150px;
+        }
+    }
+}
+
+// new styles
+.coop-reg {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+
+    .__heading {
+        @extend .heading1small;
+        color: $arcs_neutral900;
+        margin-top: -20px;
+    }
+
+    .__details {
+        @extend .body_small_regular;
+        color: $arcs_neutral700;
+        margin-top: 20px;
+    }
+
+}
+
+.__form {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+
+    .__details {
+        @extend .body_small_regular;
+        color: $arcs_neutral700;
+    }
+
+    .__btn {
+        width: 30%;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .__subheading {
+        color: $arcs_neutral900;
+        @extend .subheading1semibold;
+        margin: 25px 0px 10px 0px;
+    }
+
+    .__hover {
+        cursor: pointer;
+        color: #595C97;
+
+        &:hover {
+            color: $arcs_neutral900;
+        }
+    }
+
+    .__asset {
+        @extend .body_small_regular;
+        color: #000;
+        text-align: center !important;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .__radiovalue {
+        display: inline-block;
+        @extend .subheading1regular;
+        color: $arcs_neutral900;
+    }
+
+    .__radiocol {
+        display: block;
+        // background-color: green;
+    }
+
+    .__radiorow {
+        padding-left: 60px !important;
+    }
+}
+
+.width__form {
+    width: 80%;
+    margin: 0 auto 0;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .coop-reg {
+        .__btn {
+            width: 100%;
+        }
+
+        .__heading {
+            line-height: 34px;
+        }
+    }
+
+    .__form {
+        .__btn {
+            width: 100%;
+        }
+
+        .__radiorow {
+            padding-left: 0px !important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .choose_deposit_card__container {
+        height: 400px;
+    }
+}

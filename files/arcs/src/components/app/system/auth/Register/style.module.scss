@@ -1,0 +1,10 @@
+@import "components/mixins.scss";
+@import "scss_globals/mixins.scss";
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.container {
+	// @include theme_width();
+    @include flex_center_full_w_h();
+	padding: rem(0) rem(30);
+}

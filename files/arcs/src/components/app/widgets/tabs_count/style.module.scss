@@ -1,0 +1,13 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text__tab_name {
+	@extend .caption_large_semibold;
+}

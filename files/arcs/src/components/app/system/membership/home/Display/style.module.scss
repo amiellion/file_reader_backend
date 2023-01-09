@@ -1,0 +1,15 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    @include card_shadow();
+    border-radius: 10px;
+    border: 0px;
+}
+
+.subtitle {
+    @extend .heading2;
+    margin: 0;
+    color: black;
+}

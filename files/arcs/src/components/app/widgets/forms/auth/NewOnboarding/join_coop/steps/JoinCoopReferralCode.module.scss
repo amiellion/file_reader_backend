@@ -1,0 +1,41 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__referral-code-page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    .__form-container {
+
+        .__title {
+            @extend .heading1;
+            color: $arcs_neutral900;
+            text-align: center;
+        }
+
+        .__subtitle {
+            @extend .subheading1regular;
+            text-align: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            color: $arcs_neutral700;
+        }
+
+        .__submit-button {
+            margin-left: auto;
+            margin-right: auto;
+            width: 120px;
+        }
+
+    }
+
+}
+
+@media (max-width: 767px) {
+    .__title {
+        font-size: 40px !important;
+    }
+}

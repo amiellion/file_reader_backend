@@ -1,0 +1,30 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container__form {
+	.section__title {
+		@extend .subheading1semibold;
+		margin: 15px 0;
+	}
+	.button_container {
+		// margin: 50px 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: max-content;
+	}
+	padding: 35px 0;
+	margin: 35px 0;
+	width: 100%;
+	max-width: 45vw;
+	@media screen and(max-width: 768px) {
+		margin: auto;
+		max-width: 100%;
+		width: 100%;
+		padding: 25px;
+		border: 1px $arcs_neutral200 solid;
+		border-radius: 10px;
+	}
+}

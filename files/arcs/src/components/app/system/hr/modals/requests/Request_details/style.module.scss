@@ -1,0 +1,44 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .container__button {
+        width: 50%;
+        
+        .button {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}
+
+.txt_container {
+    // display: flex;
+    gap: 1rem;
+
+    .txt_title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: $arcs_neutral900;
+    }
+
+    .txt_body {
+        font-size: 1.1rem;
+        color: $arcs_neutral500;
+    }
+
+    .txt_files {
+        font-size: 1.1rem;
+        color: $arcs_neutral500;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }  
+}

@@ -1,0 +1,52 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__container--step1-migrate--confirm {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .__container--icon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 111px;
+            height: 111px;
+            color: $arcs_warning300;
+        }
+    }
+
+    .__text--title {
+        @extend .heading2;
+        text-align: center;
+        color: $arcs_neutral900;
+        margin: 0;
+    }
+    
+    .__text--description {
+        @extend .body_large_regular;
+        text-align: center;
+        color: $arcs_neutral600;
+        max-width: 475px;
+    }
+    .__text--link {
+        @extend .body_large_regular;
+        text-align: center;
+        color: $arcs_primary300;
+        margin: 15px 0 ;
+        cursor: pointer;
+    }
+
+    .container__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px 25px;
+
+        .button__modal {
+            width: max-content;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	margin: auto;
+	padding: rem(50) rem(30);
+	max-width: 800px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+    color: $arcs_error300;
+
+    .refer_subtitle {
+		@extend .subheading3;
+		color: $arcs_neutral900;
+	}
+
+	.common_text {
+		@extend .body_large_regular;
+		color: $arcs_neutral900;
+	}
+
+	.coop_name {
+		@extend .heading1;
+		color: $arcs_neutral900;
+        margin: 0.5em;
+	}
+
+    .profile_avatar {
+        margin-bottom: 1.5rem ;
+    }
+
+    .button_container {
+        margin-right: 1.5rem;
+    }
+
+    .button {
+        width: 8rem;
+    }
+}

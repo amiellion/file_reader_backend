@@ -1,0 +1,45 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.whatsnew__main_container {
+	padding: 15px;
+}
+
+.whatsnew__top_container {
+	text-align: left;
+	border-bottom: 1px solid $arcs_neutral500;
+
+	.whatsnew__title {
+		@extend .heading1small;
+		color: $arcs_primary300;
+		margin: 0;
+	}
+
+	.whatsnew__container_subtitle {
+		@include flex_row_justify_between();
+		margin-right: auto;
+		width: 218px;
+
+		.whatsnew__subtitle {
+			color: $arcs_neutral900;
+			@extend .heading3small;
+			margin: 5px 0;
+		}
+	}
+}
+
+.whatsnew__body {
+	padding: 8px 3px;
+
+	.whatsnew__text {
+		color: $arcs_neutral500;
+		@extend .body_large_regular;
+	}
+}
+
+.whatnew__button_container {
+	margin-top: 20px;
+	width: max-content;
+	margin: auto;
+}

@@ -1,0 +1,42 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.title {
+    @extend .heading1small;
+    padding: 0px 0px 25px 0px;
+}
+
+.head {
+    @extend .subheading1bold;
+    padding: 0px 25px 0px 0px; 
+}
+
+.head-description {
+    @extend .subheading1bold;
+    padding: 10px 0px 0px 0px;
+}
+
+.name {
+    @extend .subheading1regular;
+    padding: 5px 0px 5px 0px;
+}
+
+.description {
+    @extend .body_small_regular;
+    padding: 5px 0px 5px 0px;
+}
+
+.min-deposit {
+    @extend .subheading1;
+    padding: 5px 0px 5px 0px;
+}
+
+.value {
+    @extend .subheading1regular;
+}
+
+.interest {
+    @extend .subheading1;
+    padding: 5px 0px 5px 0px;
+}

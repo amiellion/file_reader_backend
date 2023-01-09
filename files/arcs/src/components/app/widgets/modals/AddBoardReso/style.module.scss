@@ -1,0 +1,49 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	@extend .heading3;
+	text-align: center;
+}
+
+.form {
+	padding: 0 65px;
+	@media screen and (max-width: 370px) {
+		padding: 0;
+	}
+	width: 100%;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px 25px;
+	width: 100%;
+	max-width: 300px;
+	// margin-top: 5px;
+	margin: auto;
+
+	.cancel_button {
+		width: "max-content";
+	}
+
+	@media screen and (max-width: 370px) {
+		max-width: 250px;
+		flex-direction: column;
+
+		.cancel_button {
+			width: 150px;
+		}
+		.submit_button {
+			width: 150px;
+		}
+	}
+}

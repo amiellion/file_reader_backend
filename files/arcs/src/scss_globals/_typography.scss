@@ -1,0 +1,144 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+
+// DISPLAY
+.display1 {
+	font-size: 64px;
+	font-weight: bold;
+}
+.display2 {
+	font-size: 64px;
+	font-weight: 600;
+}
+
+// HEADINGS
+.heading1 {
+	font-size: 48px;
+	font-weight: bold;
+}
+.heading1small {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.headingh1small {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.heading2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+.heading2small {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.heading3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.heading3small {
+	font-size: 18px;
+	font-weight: bold;
+}
+.heading4 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.heading4small {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.heading5 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.heading5small {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.heading6 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.heading6small {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+// SUBHEADING
+.subheading1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.subheading2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+.subheading3 {
+	font-size: 24px;
+	font-weight: 400;
+}
+// SUBHEADING SMALL
+.subheading1bold {
+	font-size: 18px;
+	font-weight: bold;
+}
+.subheading1semibold {
+	font-size: 18px;
+	font-weight: 600;
+}
+.subheading1regular {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+// Footer
+.footer_text_regular {
+	font-size: 12px;
+	font-weight: 400;
+}
+.footer_text_semi_bold {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+//body
+.body_large_regular {
+	font-size: 18px;
+	font-weight: 400;
+}
+.body_large_semibold {
+	font-size: 18px;
+	font-weight: 600;
+}
+.body_small_regular {
+	font-size: 16px;
+	font-weight: 400;
+}
+.body_small_semibold {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+//captions
+.caption_large_regular {
+	font-size: 14px;
+	font-weight: 400;
+}
+.caption_large_semibold {
+	font-size: 14px;
+	font-weight: 600;
+}
+.caption_small {
+	font-size: 12px;
+	font-weight: 400;
+}
+.caption_small_semibold {
+	font-size: 12px;
+	font-weight: 600;
+}

@@ -1,0 +1,42 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._border-earnings {
+    border: 1px solid $arcs_neutral300;
+
+    ._add-earnings {
+        border: 1px solid transparent !important;
+        padding: 12px 0px 36px 0px !important;
+    }
+
+    ._space {
+        padding: 0px !important;
+    }
+
+}
+
+._border-btns {
+    margin-top: 30px;
+
+    ._cancel {
+        border: 1px solid transparent;
+        background: transparent;
+        color: $arcs_primary300;
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+
+    ._save {
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+}

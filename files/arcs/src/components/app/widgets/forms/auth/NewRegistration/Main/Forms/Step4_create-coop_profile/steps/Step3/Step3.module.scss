@@ -1,0 +1,33 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.container {
+	// margin: auto;
+	width: 100% !important;
+
+	.form_inner_title {
+		@extend .caption_large_semibold;
+		// color: darken($color: rgb(82, 80, 180), $amount: 6);
+		text-align: left;
+		border-bottom: 1px solid rgba(48, 48, 77, 0.2);
+		padding-bottom: 0.6em;
+		margin-bottom: 1em;
+	}
+	.title {
+		@extend .heading1small;
+	}
+	.buttonContainer {
+		align-self: center;
+		margin: auto;
+		max-width: 250px;
+		width: 100%;
+	}
+	.button {
+		max-width: 150px;
+	}
+}

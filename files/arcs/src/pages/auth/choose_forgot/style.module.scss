@@ -1,0 +1,38 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	margin: auto;
+	padding: rem(50) rem(30);
+  width: 100%;
+	max-width: 750px;
+	.refer_title {
+		@extend .heading1;
+		color: $arcs_neutral900;
+	}
+
+	.refer_subtitle {
+		@extend .body_large_regular;
+		color: $arcs_neutral900;
+	}
+
+  .radio_buttons {
+    margin-left: 50px;
+  }
+
+	.button_container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.button {
+			max-width: 150px;
+		}
+	}
+  
+}
+
+
+  

@@ -1,0 +1,185 @@
+@import "components/mixins.scss";
+@import "scss_globals/variables.scss";
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  "CORE" STYLES */
+
+:root {
+    --kit-color-primary: #5250B4;
+    //   --kit-font-family: 'Mukta', sans-serif; #edited
+    --kit-font-family: "Poppins", "Mukta", sans-serif;
+}
+
+html {
+    font-size: 15px;
+
+    @media (max-width: $sm-max-width) {
+        font-size: 14px;
+    }
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: $base-font-family;
+    color: $text;
+    overflow-x: hidden;
+    position: relative;
+    font-variant: normal;
+    font-feature-settings: normal;
+}
+
+a {
+    text-decoration: none;
+    color: $text;
+    @include transition-color();
+
+    &:hover,
+    &:active,
+    &:focus {
+        // color: $blue; #edited
+        color: $blue;
+        // color: lighten($color: #4b7cf3, $amount: 35)!important;
+        // color: white !important;
+        text-decoration: none;
+    }
+}
+
+// #edited
+.ant-menu-item .ant-menu-item-only-child a,
+.ant-menu-title-content a,
+.ant-menu-submenu-title a {
+    // #edited
+    // color: $text;
+    color: $menu_item_text_base_color;
+    @include transition-color();
+
+    &:hover,
+    &:active,
+    &:focus {
+        // color: $blue; #edited
+        color: $root_primary;
+        // color: lighten($color: #4b7cf3, $amount: 35)!important;
+        text-decoration: none;
+    }
+}
+
+li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child {
+    border-radius: 2px;
+}
+
+
+//for animating bar (discontinued for now, lagging)
+li.ant-menu-item.ant-menu-item-only-child>span {
+    &:after {
+        content: ' fd';
+        position: absolute;
+        color: transparent;
+        width: 4px;
+        right: 0;
+        background: transparent;
+        border-radius: 2px;
+        transition: all 275ms ease-in-out;
+    }
+}
+
+li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child>span {
+    &:after {
+        content: ' fd';
+        position: absolute;
+        color: transparent;
+        width: 4px;
+        background: $arcs_primary300;
+        right: 0;
+        border-radius: 2px;
+    }
+}
+
+li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child>span>a,
+li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child>span>a>span {
+    color: $root_primary !important;
+}
+
+
+//ant-menu-item ant-menu-item-selected ant-menu-item-only-child
+
+// #edited
+// .ant-menu-submenu .ant-menu-submenu-inline .ant-menu-submenu-open {
+// 	background-color: red;
+// }
+
+// input {
+// 	outline: none !important;
+// 	font-family: $base-font-family;
+// 	color: $text;
+// }
+
+// button,
+// input {
+// 	box-shadow: none !important;
+// 	outline: none !important;
+// }
+
+// input[type="text"],
+// input[type="password"],
+// input[type="email"],
+// textarea {
+// 	appearance: none !important;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $black;
+}
+
+svg {
+    vertical-align: initial;
+    overflow: auto;
+}
+
+.badge-example {
+    font-size: rem(14);
+    text-transform: uppercase;
+    margin-bottom: rem(15);
+    background: $gray-2;
+    color: $black;
+    display: inline-block;
+    padding: rem(3) rem(6);
+    border-radius: 4px;
+}
+
+// dark theme
+[data-kit-theme="dark"] {
+    body {
+        background: $dark-gray-5;
+        color: $dark-gray-1;
+    }
+
+    .badge-example {
+        background: $dark-gray-4;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $dark-gray-1;
+    }
+
+    a {
+        color: $dark-gray-1;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+}

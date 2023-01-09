@@ -1,0 +1,27 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	margin: auto;
+}
+
+.feed_grid {
+	width: 100%;
+	padding: 3%;
+	display: flex;
+	margin-left: -30px; /* gutter size offset */
+	overflow: visible;
+	.feed_grid__col {
+		padding-left: 30px; /* gutter size */
+		background-clip: padding-box;
+		gap: 25px;
+		overflow: visible;
+	}
+}
+.card__loan {
+	margin: 6% 1%;
+	overflow: visible;
+	background-color: red;
+}
+

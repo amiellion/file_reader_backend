@@ -1,0 +1,171 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+.table-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid red !important;
+    background-color: red !important;
+    color: red;
+    /* outline: 1px solid red !important; */
+}
+
+.__container--datatable-view-delete-entry {
+
+    margin: auto;
+    margin-top: -15px;
+    margin-left: 0px;
+    padding: 10px;
+    padding-left: 0;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px 10px;
+
+
+    button {
+        transition: all 200ms ease-in-out;
+        min-height: 29px;
+        width: max-content;
+        outline: 0;
+        padding: 8px;
+
+        @media screen and (max-width: 1324px) {
+            font-size: 10px;
+
+        }
+    }
+
+
+    .__btn--datatable-view-entry {
+        background-color: $arcs_primary300;
+        border: 1px solid $arcs_primary300  !important;
+        color: $arcs_neutral50;
+
+        &:hover {
+            background-color: $arcs_primary100;
+            border: 1px solid $arcs_primary100  !important;
+            color: $arcs_neutral50;
+        }
+
+        &:active {
+            background-color: $arcs_primary400;
+            border: 1px solid $arcs_primary400  !important;
+            color: $arcs_neutral50;
+        }
+
+        &:disabled {
+            background-color: $arcs_neutral50;
+            border: 1px solid $arcs_neutral300  !important;
+            color: $arcs_neutral300;
+        }
+    }
+
+    .__btn--datatable-delete-entry {
+
+        background-color: $arcs_error50;
+        border: 1px solid $arcs_error300;
+        color: $arcs_error300;
+
+        &:hover {
+            background-color: $arcs_error200;
+            border: 1px solid $arcs_error200;
+            color: $arcs_error50;
+        }
+
+        &:active {
+            background-color: $arcs_error400;
+            border: 1px solid $arcs_error400;
+            color: $arcs_error50;
+        }
+
+        &:disabled {
+            background-color: $arcs_error50;
+            border: 1px solid $arcs_error50;
+            color: $arcs_neutral500;
+        }
+    }
+}
+
+
+
+.__button--dropdown-action {
+    background-color: $arcs_neutral50  !important;
+    border-radius: 25px;
+    border: 1px solid $arcs_primary300  !important;
+    transition: all 300ms ease-in-out;
+    width: 50px;
+
+    &::after {
+        color: $arcs_primary300  !important;
+        content: "";
+        display: none !important;
+    }
+
+    svg {
+        color: $arcs_primary300;
+        transform: scale(1);
+    }
+
+    &:hover {
+        background-color: $arcs_primary300  !important;
+        border: 1px solid $arcs_primary300  !important;
+
+        svg {
+            transform: scale(1);
+            color: $arcs_neutral50;
+        }
+
+        &::after {
+            color: $arcs_neutral50  !important;
+        }
+    }
+
+    &:active {
+        background-color: $arcs_primary300  !important;
+        border: 1px solid $arcs_primary300  !important;
+
+        svg {
+            transform: scale(1);
+            color: $arcs_neutral50  !important;
+        }
+
+        &::after {
+            color: $arcs_neutral50  !important;
+        }
+    }
+
+    &:focus {
+        background-color: $arcs_primary300  !important;
+        border: 1px solid $arcs_primary300  !important;
+
+        svg {
+            transform: scale(1);
+            color: $arcs_neutral50;
+        }
+
+        &::after {
+            color: $arcs_neutral50  !important;
+        }
+    }
+
+
+    .dropdown-button-dark-example1 {
+        &:hover {
+            color: $arcs_primary300  !important;
+        }
+
+        &:active {
+            color: $arcs_primary300  !important;
+        }
+    }
+
+}

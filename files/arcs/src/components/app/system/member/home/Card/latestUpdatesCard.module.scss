@@ -1,0 +1,28 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.announcement_container {
+	.announcement_title {
+		@extend .body_large_semibold;
+		color: $arcs_neutral900;
+	}
+	.announcement_body {
+		@extend .caption_small;
+		color: $arcs_neutral900;
+	}
+	.announcement_date {
+		@extend .caption_small;
+		color: $arcs_neutral500;
+	}
+	.container_profile_pic {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+
+		.profile_pic {
+		}
+	}
+}

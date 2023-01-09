@@ -1,0 +1,16 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+//** Header **//
+.main-txt {
+	font-size: 48px;
+	font-weight: 700;
+	color: #30304d;
+	margin-bottom: 12px;
+}
+
+#border-btm {
+	border-bottom: 1px solid #e5e5e5;
+}

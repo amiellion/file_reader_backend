@@ -1,0 +1,142 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.account_creation_step3 {
+    margin: auto;
+    padding: rem(50) rem(30);
+    width: 100%;
+    max-width: 750px;
+    color: black;
+
+    @media (max-width: 768px) {
+        margin-top: -50px;
+        max-width: 100%;
+    }
+
+    .__title {
+        @extend .heading1;
+        text-align: center;
+        margin-bottom: 50px;
+        color: $arcs_neutral900;
+    }
+
+
+    .__container-choose {
+        height: 520px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+
+    .__card-choose {
+        height: 390px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        // padding: 0 15px 0 15px;
+
+        svg {
+            visibility: visible;
+            color: $arcs_neutral600;
+            width: 105px;
+            height: 134px;
+            margin: auto;
+
+        }
+
+        .__title {
+            @extend .heading2;
+            text-align: center;
+            color: $arcs_neutral900;
+            margin: 10px;
+        }
+
+        .__description {
+            text-align: center;
+            @extend .body_large_regular;
+            text-align: center;
+            color: $arcs_neutral900;
+            max-width: 25ch;
+        }
+
+        .__container-buttton {
+            width: max-content;
+
+            @media (max-width: 768px) {
+                max-width: 50%;
+                width: 50%;
+            }
+        }
+
+    }
+
+    .__divider {
+        // width: 1px;
+        // height: 500px;
+        border: 1px solid $arcs_neutral500;
+
+        @media (min-width: 767px) {
+            margin-left: 30px
+        }
+
+        @media (min-width: 576px) {
+            margin-left: 30px
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .__title {
+            font-size: 42px;
+        }
+
+        .__card-choose {
+            // max-width: 282px;
+            height: 50%;
+            margin-bottom: 50px;
+
+            svg {
+                visibility: visible;
+                color: $arcs_neutral600;
+                // width: 15vw;
+                height: 15vw;
+                margin: auto;
+
+            }
+
+            .__title {
+                font-size: 28px;
+            }
+
+            // .__description {
+            //     font-size: calc(2px + 1.6vw);
+            //     // max-width: 25ch;
+            // }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .__title {
+        font-size: 40px !important;
+        line-height: 40px;
+    }
+
+    .__divider {
+        visibility: hidden;
+    }
+
+    .__card-choose {
+
+
+        .__title {
+            font-size: 30px !important;
+        }
+    }
+}

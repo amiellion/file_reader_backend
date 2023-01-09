@@ -1,0 +1,44 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    .detail {
+        color: #30304D;
+    }
+
+    .value {
+        color: #6A6A80;
+    }
+}
+
+.modal-container {
+    padding: 5px 5px 5px 0px;
+
+    .label {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        color: #30304D;
+    }
+
+    .no-details {
+        border: 1px solid black;
+    }
+
+    .button {
+        margin-top: 10px;
+        width: max-content;
+    }
+}

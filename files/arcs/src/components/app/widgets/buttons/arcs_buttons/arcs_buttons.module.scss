@@ -1,0 +1,172 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.primary {
+	width: 100%;
+	transition: all 150ms ease-in-out;
+	background-color: $arcs_primary300;
+	border-color: $arcs_primary300;
+	color: $arcs_neutral50;
+
+	&:hover,
+	&:focus {
+		background-color: $arcs_primary100;
+		border-color: $arcs_primary100;
+		color: $arcs_neutral50;
+		// @include uniform_hover($arcs_primary300, $arcs_neutral50);
+	}
+	&:active {
+		background-color: $arcs_primary400;
+		border-color: $arcs_primary400;
+		color: $arcs_neutral50;
+		// @include uniform_hover($arcs_primary300, $arcs_neutral50);
+	}
+	&:disabled {
+		background-color: $arcs_neutral50;
+		border-color: $arcs_neutral300;
+		color: $arcs_neutral300;
+		// @include uniform_hover($arcs_primary300, $arcs_neutral50);
+	}
+}
+
+.primary_dashed {
+	width: 100%;
+	transition: all 150ms ease-in-out;
+	background-color: $arcs_neutral100;
+	border: 1px dashed $arcs_neutral500;
+	color: $arcs_neutral500;
+
+	&:hover,
+	&:focus {
+		background-color: #f9f9ff;
+		color: $arcs_primary300;
+		border-color: $arcs_primary300;
+		border: 1px dashed $arcs_primary300;
+	}
+	&:active {
+		background-color: $arcs_neutral300;
+		color: $arcs_primary400;
+		border: 1px dashed $arcs_primary400;
+	}
+}
+
+.primary_outlined {
+	width: 100%;
+	transition: all 150ms ease-in-out;
+	background-color: $arcs_neutral100;
+	border-color: $arcs_neutral500;
+	color: $arcs_neutral500;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: #f9f9ff;
+		color: $arcs_primary400;
+		border-color: $arcs_primary300;
+
+		// @include uniform_hover($arcs_neutral500, $arcs_neutral100);
+	}
+
+	& a,
+	a:focus,
+	& a:active,
+	& a:hover {
+		color: $arcs_primary400 !important;
+	}
+}
+
+.transparent_bg {
+	width: 100%;
+	transition: all 150ms ease-in-out;
+	background-color: transparent;
+	border-color: transparent;
+	color: $arcs_primary300;
+
+	&:hover,
+	&:focus {
+		background-color: $arcs_neutral200;
+		color: $arcs_neutral500;
+		border-color: transparent;
+		& a {
+			color: $arcs_primary400 !important;
+		}
+		// @include uniform_hover($arcs_neutral500, $arcs_neutral100);
+	}
+
+	&:active {
+		background-color: $arcs_neutral200;
+		color: $arcs_neutral500;
+		border-color: transparent;
+
+		// @include uniform_hover($arcs_neutral500, $arcs_neutral100);
+	}
+	& a,
+    & a:focus,
+	& a:active,
+	& a:hover {
+		color: $arcs_neutral500 !important;
+	}
+}
+
+//Danger
+.danger_primary {
+	width: 100%;
+	transition: all 150ms ease-in-out;
+	background-color: darken($color: $arcs_error300, $amount: 15);
+	border-color: $arcs_error200;
+	color: $arcs_error50;
+
+	&:hover,
+	&:focus {
+		background-color: $arcs_error200;
+		border-color: $arcs_error200;
+		color: $arcs_neutral50;
+		// @include uniform_hover($arcs_error400, $arcs_error50);
+	}
+	&:active {
+		background-color: darken($color: $arcs_error100, $amount: 30);
+		border-color: $arcs_error100;
+		color: $arcs_neutral50;
+	}
+}
+.danger_outlined {
+	width: 100%;
+	transition: all 150ms ease-in-out;
+	background-color: $arcs_error50;
+	border-color: $arcs_error400;
+	color: $arcs_error400;
+
+	&:hover,
+	&:focus {
+		background-color: $arcs_error50;
+		color: $arcs_error300;
+		border-color: $arcs_error300;
+		// @include uniform_hover($arcs_error400, $arcs_error50);
+	}
+	&:active {
+		background-color: darken($color: $arcs_error50, $amount: 5);
+		color: $arcs_error300;
+		border-color: $arcs_error300;
+	}
+}
+.danger_link {
+	width: 100%;
+	transition: all 150ms ease-in-out;
+	background-color: transparents;
+	border-color: transparent;
+	color: $arcs_error300;
+
+	&:hover,
+	&:focus {
+		background-color: $arcs_error50;
+		border-color: $arcs_error50;
+		color: $arcs_error300;
+		// @include uniform_hover($arcs_error400, $arcs_error50);
+	}
+	&:active {
+		background-color: darken($color: $arcs_error50, $amount: 5);
+		color: $arcs_error400;
+		border-color: darken($color: $arcs_error50, $amount: 5);
+	}
+}

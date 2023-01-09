@@ -1,0 +1,19 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+@media screen and (max-width: $large) {
+	.form {
+		margin: auto;
+		width: 100%;
+		max-width: 400px;
+	}
+
+	.title {
+		text-align: center;
+	}
+}
+
+.login_button {
+    max-width: 150px;
+}

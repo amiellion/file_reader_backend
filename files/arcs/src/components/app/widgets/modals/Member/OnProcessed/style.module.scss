@@ -1,0 +1,44 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+//** Loan Application On Processed **/
+#process{
+	padding: 20px 30px 0px 30px;
+    text-align: center;
+}
+
+.icon{
+    text-align: center;
+}
+
+// svg{
+//     visibility: hidden;
+// }
+
+.main-txt{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #30304D;
+}
+
+.txt{
+    font-size: 18px;
+    text-align: center;
+    color: #30304D;
+}
+
+.grn-txt{
+    font-size: 24px;
+    text-align: center;
+    color: #25B053; 
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+}
+
+.close{
+    margin-top: 20px;
+    width: 50%;
+}

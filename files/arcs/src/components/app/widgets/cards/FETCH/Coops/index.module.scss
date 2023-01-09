@@ -1,0 +1,8 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}

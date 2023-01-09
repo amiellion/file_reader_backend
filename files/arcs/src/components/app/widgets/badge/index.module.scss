@@ -1,0 +1,60 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.approved,
+.active,
+.declined,
+.pending,
+.archived,
+.employed {
+
+	padding: 5px 10px;
+	text-align: center;
+	border-radius: 100px;
+	max-width: max-content;
+	// margin: 10px auto;
+}
+
+
+.employed {
+	background-color: $arcs_confirm50;
+	border: 1px solid $arcs_confirm400;
+	color: $arcs_confirm400;
+}
+
+.approved {
+	background-color: $arcs_confirm50;
+	border: 1px solid $arcs_confirm400;
+	color: $arcs_confirm400;
+}
+
+.active {
+	background-color: $arcs_confirm50;
+	border: 1px solid $arcs_confirm400;
+	color: $arcs_confirm400;
+}
+
+.declined {
+	background-color: $arcs_error50;
+	border: 1px solid $arcs_error400;
+	color: $arcs_error400;
+}
+
+.pending {
+	background-color: $arcs_warning50;
+	border: 1px solid $arcs_warning400;
+	color: $arcs_warning400;
+}
+
+.preview {
+	background-color: $arcs_neutral50;
+	border: 1px solid $arcs_neutral300;
+	color: $arcs_neutral300;
+}
+
+.archived {
+	background-color: $arcs_neutral50;
+	border: 1px solid $arcs_neutral300;
+	color: $arcs_neutral300;
+}

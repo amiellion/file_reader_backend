@@ -1,0 +1,27 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.container {
+	margin: auto;
+	// padding: rem(50) rem(30);
+	max-width: 750px;
+
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    
+	.title {
+		@extend .heading1small;
+	}
+
+    .button{
+        margin: auto;
+        max-width: 150px;
+    }
+}

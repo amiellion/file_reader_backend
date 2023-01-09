@@ -1,0 +1,9 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.head {
+    @extend .subheading1semibold;
+    margin-top: -8px;
+    font-size: 14px;
+}

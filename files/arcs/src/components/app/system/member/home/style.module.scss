@@ -1,0 +1,15 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.subtitle {
+	@extend .heading2;
+	margin: 0;
+	color: black;
+}

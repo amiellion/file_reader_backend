@@ -1,0 +1,27 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form_container {
+	width: max-content;
+	max-width: 25vw;
+
+	padding: 20px;
+	margin: 20px 0;
+
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+		width: max-content;
+		margin: auto;
+	}
+}
+
+.form__input_group {
+	@include input_group();
+}

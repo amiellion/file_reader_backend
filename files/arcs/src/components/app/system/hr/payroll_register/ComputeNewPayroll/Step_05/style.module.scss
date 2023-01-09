@@ -1,0 +1,28 @@
+.main__container {
+    padding: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #30304D;
+
+    .text {
+        font-weight: 400;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .key {
+        font-weight: 600;
+        margin-right: 67px;
+    }
+
+    .value {
+        font-weight: 400;
+    }
+    
+    .button {
+        width: 108px;
+        float: right;
+    }
+}

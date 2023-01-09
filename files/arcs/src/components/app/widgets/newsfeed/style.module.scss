@@ -1,0 +1,47 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.news-feed {
+    @extend .heading3;
+    text-align: left;
+}
+
+.title {
+    @extend .heading6;
+    text-align: left;
+    // border: 1px solid black;
+}
+
+.coop_role {
+    @extend .footer_text_regular;
+    // border: 1px solid black;
+    color: grey;
+}
+
+.description {
+    @extend .caption_small;
+    text-align: left;
+    // border: 1px solid black;
+}
+
+.date {
+    // border: 1px solid black;
+    text-align: left;
+    color: grey;
+}
+
+.view {
+    width: 100%;
+}
+
+.icon {
+    width: 5%;
+    margin-left: 2%;
+    
+    .count {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

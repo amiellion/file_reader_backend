@@ -1,0 +1,34 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.confirm_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	.confirm_icon {
+		font-size: 75px;
+		margin-bottom: 15px;
+		color: $arcs_warning300;
+	}
+	.confirm_text {
+		@extend .heading3;
+		text-align: center;
+	}
+}
+
+.footer {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 200px;
+	button {
+		width: min-content;
+	}
+}

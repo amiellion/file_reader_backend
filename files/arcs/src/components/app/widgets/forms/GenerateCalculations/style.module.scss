@@ -1,0 +1,14 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.button__clear_calculate {
+	width: max-content;
+}
+.container__buttons {
+	width: "100%";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 25px 25px;
+}

@@ -1,0 +1,87 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+.__text--tag {
+    @extend .body_large_regular;
+    padding: 5px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.__text--tag-add {
+    @extend .body_large_regular;
+    padding: 5px 7px;
+}
+
+/*### EDIT DEPARMENT MODAL ###*/
+._border-btns {
+    margin-top: 30px;
+
+    ._cancel {
+        border: 1px solid transparent;
+        background: transparent;
+        color: $arcs_primary300;
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+
+    ._save {
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+}
+
+._title {
+    color: $arcs_neutral900;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+._sub-title {
+    color: $arcs_neutral900;
+    @extend .subheading1semibold;
+    margin-bottom: 10px;
+}
+
+._desc {
+    color: $arcs_neutral600;
+    @extend .body_large_regular;
+    margin: -10px 0 -15px 0;
+}
+
+._checkbox-space {
+    margin-top: -20px;
+}
+
+.delete {
+    text-align: center;
+    padding: 30px 20px 0px 20px;
+
+    ._cancel {
+        border: 1px solid transparent;
+        background: transparent;
+        color: $arcs_primary300;
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+
+    ._save {
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+
+    ._txt {
+        color: $arcs_neutral900;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+}
+
+._width {
+    max-width: 400px;
+}

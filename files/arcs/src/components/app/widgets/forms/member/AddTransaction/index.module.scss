@@ -1,0 +1,25 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	.inner_container {
+		.form_title {
+			@extend .body_large_semibold;
+			color: $arcs_neutral900;
+		}
+
+		.form_mode_of_payment {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: row;
+
+			.select_mode_of_payment {
+				width: 100%;
+				max-width: 250px;
+				min-width: 150px;
+			}
+		}
+	}
+}

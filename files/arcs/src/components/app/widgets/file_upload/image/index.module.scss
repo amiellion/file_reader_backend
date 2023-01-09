@@ -1,0 +1,27 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__container--upload-trial-balance {
+
+  
+    .__container--svg {
+
+        svg {
+            color: $arcs_neutral500
+        }
+    }
+
+    .__text--upload {
+        @extend .body_large_regular;
+        color: $arcs_neutral300;
+    }
+
+    .__upload--dnd {
+        margin: auto;
+        width: 90%;
+        background-color: $arcs_neutral100;
+        border-color: $arcs_neutral500;
+    }
+
+}

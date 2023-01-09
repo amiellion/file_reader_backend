@@ -1,0 +1,21 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+#custom_card {
+	@include card_shadow();
+	border: 0px;
+	border-radius: 10px;
+	background-color: $arcs_neutral50;
+	// justify-content: space-around;??
+	display: flex;
+	& > div {
+		flex: 1;
+	}
+}
+
+@media (max-width: 768px) {
+    // #custom_card {
+    //     display: inline-block;
+    // }
+}

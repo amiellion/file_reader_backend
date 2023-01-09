@@ -1,0 +1,26 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	@include flex_column_justify_between();
+}
+.text__title {
+	@extend .heading3;
+	text-align: center;
+}
+.text__description {
+	@extend .subheading1regular;
+	text-align: center;
+}
+
+.container__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 25px 25px;
+
+	.button__modal {
+		width: max-content;
+	}
+}

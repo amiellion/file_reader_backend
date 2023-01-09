@@ -1,0 +1,17 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button__modal {
+	width: max-content;
+}
+
+.button__modal:hover {
+  cursor: pointer;
+}

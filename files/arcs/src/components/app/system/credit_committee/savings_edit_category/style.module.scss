@@ -1,0 +1,27 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container__main {
+	.text__title {
+		@extend .heading2;
+		margin-bottom: 25px;
+	}
+	.text__subtitle {
+		@extend .heading2;
+		margin-bottom: 25px;
+	}
+	.container__button {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: row;
+		gap: 25px 25px;
+		width: 250px;
+	}
+	.text__body {
+		@extend .body_large_regular;
+		color: $arcs_neutral600;
+		margin-bottom: 35px;
+	}
+}

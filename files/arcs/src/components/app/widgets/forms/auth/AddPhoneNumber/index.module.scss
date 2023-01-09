@@ -1,0 +1,25 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.confirm_signup__card {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.confirm_signup__form {
+	width: 95%;
+	max-width: 500px;
+}
+
+.confirm_signup__title {
+	@extend .heading1;
+	color: $arcs_neutral900;
+}
+
+.confirm_signup__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,58 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+/*### Personnel Files Top ###*/
+
+.top-personnel {
+    margin: 30px 0 25px 0;
+
+    ._width {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    ._filter {
+        color: $arcs_black;
+        @extend .subheading1regular;
+        margin-top: 27px;
+
+        @media (max-width: 480px) {
+            margin: 10px 0 0 0;
+        }
+
+        @media (max-width: 768px) {
+            margin: 10px 0 0 0;
+        }
+    }
+
+    ._txt {
+        color: $arcs_black;
+        @extend .caption_large_regular;
+        margin-bottom: 5px;
+    }
+
+    ._btn-align {
+        margin-top: 27px;
+        text-align: right;
+
+        ._btn {
+            width: 70%;
+
+            @media (max-width: 480px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+            @media (max-width: 1197px) {
+                width: 100%;
+            }
+        }
+    }
+
+}

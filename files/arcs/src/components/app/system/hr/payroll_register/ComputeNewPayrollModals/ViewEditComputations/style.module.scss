@@ -1,0 +1,77 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    .detail {
+        color: #30304D;
+    }
+
+    .value {
+        color: #6A6A80;
+    }
+
+    .field_container {
+        display: flex;
+        gap: 4rem;
+    }
+}
+
+.modal-container {
+    padding: 20px;
+    max-width: 720px;
+
+    .__button-close {
+        position: absolute;
+        top: 3.5%;
+        right: 5%;
+        cursor: pointer;
+
+        svg {
+            width: 35px;
+            height: 35px;
+            color: $arcs_neutral500;
+        }
+    }
+
+    .label {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        color: #30304D;
+    }
+
+    .__divider-details {
+        background-color: $arcs_neutral500;
+    }
+
+    .detail {
+        @extend .body_large_semibold;
+    }
+
+    .no-details {
+        border: 1px solid black;
+    }
+
+    .button {
+        // margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 30%;
+        min-width: 250px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+}

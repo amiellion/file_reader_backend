@@ -1,0 +1,14 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.inner_container__decline_modal {
+	// width: max-content;
+	height: 100%;
+	padding: 50px;
+
+	.title {
+		@extend .subheading1semibold;
+		color: $arcs_neutral900;
+	}
+}

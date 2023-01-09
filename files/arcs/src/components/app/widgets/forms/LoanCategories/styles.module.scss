@@ -1,0 +1,87 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.input_group {
+	@extend .caption_large_semibold;
+
+	& input {
+		// color: red;
+		background-color: $arcs_neutral50 !important;
+	}
+}
+
+.container__form {
+	.container__custom_label {
+		@include flex_row();
+		gap: 25px 10px;
+		.text__custom_label {
+			@extend .heading3;
+			margin: 0;
+		}
+	}
+	.container__custom_label_small {
+		@include flex_row();
+		gap: 0px 4px;
+		.text__custom_label_small {
+			margin-bottom: 2px;
+		}
+	}
+
+	.section__title {
+		@extend .heading3;
+		font-weight: 700;
+		color: $arcs_neutral900;
+	}
+	.text__subtitle {
+		@extend .heading2;
+		margin-bottom: 10px;
+	}
+	.text__body {
+		@extend .body_large_regular;
+		color: $arcs_neutral600;
+		margin-bottom: 35px;
+	}
+	.container__button {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: row;
+		gap: 25px 25px;
+		width: 250px;
+	}
+}
+
+.section__other_fees {
+	padding: 2% 0;
+	border-top: 1px solid $arcs_neutral400;
+	border-bottom: 1px solid $arcs_neutral400;
+	margin: 50px;
+
+	.other_fees__title_container {
+		@include flex_row();
+		flex-wrap: nowrap;
+		align-items: center;
+		gap: 15px;
+		margin: 0 0 30px 0;
+
+		.other_fees__text_title {
+			@extend .heading3;
+			color: $arcs_neutral900;
+			margin: 0;
+		}
+
+		.other_fees__button_container {
+			@include flex_row();
+			flex-wrap: nowrap;
+			gap: 15px 15px;
+
+			.other_fees__buttons {
+				border-radius: 100px;
+			}
+		}
+	}
+	.other_fees__subform {
+		padding: 3%;
+	}
+}

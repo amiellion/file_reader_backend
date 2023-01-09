@@ -1,0 +1,66 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+#pending-entries {
+    width: 460px;
+    padding: 10px;
+    box-shadow: 0px 6px 7px #d5d2d261;
+    border-radius: 20px;
+}
+
+.title-left {
+    @extend .body_large_regular;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.title-right {
+    @extend .body_large_regular;
+    margin-top: 0.5rem;
+    text-align: right;
+}
+
+.details-left {
+    text-align: left;
+    @extend .body_large_semibold;
+    margin-bottom: 20px;
+}
+
+.details-left__space {
+    text-align: left;
+    @extend .body_large_semibold;
+    padding-bottom: 20px;
+}
+
+.details-right {
+    text-align: right;
+    @extend .body_large_semibold;
+}
+
+.border-btm {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $arcs_neutral200;
+}
+
+.btn-pending {
+    margin-top: -20px;
+    @extend .body_large_regular;
+    padding: 10px 0px 35px 0px;
+}
+
+/*### Mobile Responsiveness ###*/
+@media (max-width: 768px) {
+    #pending-entries {
+        margin-bottom: 0px;
+        width: 100% !important;
+    }
+}
+
+/*### Tablet Responsiveness ###*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    #pending-entries {
+        width: 100% !important;
+    }
+}

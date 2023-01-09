@@ -1,0 +1,44 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__phone-confirmation-three {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .__mail-icon {
+        text-align: center;
+    }
+
+    .__title {
+        @extend .heading1small;
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: 360px) {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    .__submit-button {
+        width: 140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .__use-phone {
+        @extend .subheading1regular;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .__use-phone:hover {
+        font-weight: bold;
+    }
+
+
+}

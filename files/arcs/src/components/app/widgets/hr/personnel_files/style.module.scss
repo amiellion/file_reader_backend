@@ -1,0 +1,112 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.header {
+
+    .header_detail {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .avatar {
+            padding: 10px;
+        }
+
+        .name {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 130%;
+            color: #5250B4;
+
+        }
+
+        .position, .department {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #6A6A80;
+        }
+    }
+
+}
+
+.title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #5250B4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.divider {
+    width: 100%;
+	background-color: $arcs_neutral500;
+}
+
+.key {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #30304D;
+}
+
+.value {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #6A6A80;
+}
+
+.files {
+    padding: 10px;
+    margin-bottom: 80px;
+
+    .uploaded {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .file_name {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+    }
+}
+
+.footer_details {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    
+    div {
+        padding-top: 10px;
+        padding-right: 15px;
+    }
+
+    .footer_key {
+        color: #30304D;
+    }
+
+    .footer_value {
+        color: #6A6A80;
+    }
+}

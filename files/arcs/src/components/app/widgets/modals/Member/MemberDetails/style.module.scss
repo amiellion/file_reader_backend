@@ -1,0 +1,49 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+//** Payment Transaction Result **/
+#transact-res {
+	padding: 20px 30px 0px 30px;
+	.close {
+		// margin-top: 20px;
+		// position: absolute;
+		// left: 25;
+		// top: 0;
+		width: 95%;
+	}
+}
+
+.icon {
+	text-align: center;
+}
+
+.main-txt {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	color: #30304d;
+}
+
+.txt {
+	font-size: 18px;
+	text-align: center;
+	color: #30304d;
+}
+
+.grn-txt {
+	font-size: 24px;
+	text-align: center;
+	color: #25b053;
+	font-weight: bold;
+	padding: 10px 0px 10px 0px;
+}
+
+// .body__modal {
+// 	width: 85%;
+
+// 	@media screen and (max-width: 768px) {
+// 		width: 95%;
+//         background-color: red;
+// 	}
+// }

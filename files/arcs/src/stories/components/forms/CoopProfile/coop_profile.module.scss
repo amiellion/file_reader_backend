@@ -1,0 +1,53 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+.add-btn {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.contact__details{
+    @extend .heading3;
+    padding-top: 40px;
+}
+
+.title__space{
+    padding: 15px 0px 5px 0px;
+    @extend .body_large_semibold;
+}
+
+.about__coop{
+    width: 70%;
+}
+
+// .upload__image{
+//     padding-right: 40px;
+// }
+
+.upload__image{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 100%;
+    // height: 200px;
+}
+
+.upload__image btn{
+    height: 200px;
+}
+
+.title{
+    @extend .body_large_semibold;
+}
+
+@media (max-width: 768px) {
+    .about__coop{
+        width: 100%;
+    }
+}

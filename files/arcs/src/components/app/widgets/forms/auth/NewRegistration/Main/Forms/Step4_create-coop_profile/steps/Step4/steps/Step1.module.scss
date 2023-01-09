@@ -1,0 +1,37 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.container {
+	margin: auto;
+	// padding: rem(50) rem(30);
+
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.title {
+		@extend .heading1small;
+	}
+
+	&a:hover,
+	&a:active,
+	&a:focused {
+		color: $arcs_neutral300 !important;
+	}
+
+	.buttonContainer {
+		align-self: center;
+		margin: auto;
+		max-width: 250px;
+		width: 100%;
+	}
+	.button {
+		max-width: 150px;
+	}
+}

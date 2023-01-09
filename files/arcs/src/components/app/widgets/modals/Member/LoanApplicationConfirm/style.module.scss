@@ -1,0 +1,31 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+#confirmation{
+	padding: 20px 30px 30px 30px;
+}
+.icon{
+    text-align: center;
+}
+
+// svg{
+//     visibility: hidden;
+// }
+
+.main-txt{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #30304D;
+}
+.yes{
+    margin: 20px 5px -40px 0px;
+    width: 25%;
+}
+
+.no{
+    margin: 20px 0px -40px 5px;
+    width: 25%;
+}

@@ -1,0 +1,14 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+/*### PAYROLL EARNING DEDUCTIONS ###*/
+
+._details{
+	@extend .body_large_regular;
+	color: $ant_neutral13;
+}
+
+._space{
+	margin-top: 20px;
+}

@@ -1,0 +1,231 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    display: flex;
+    justify-items: stretch;
+    gap: 10rem;
+    margin-bottom: 2rem;
+}
+
+.form_container {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.button_container {
+    display: flex;
+    gap: 36px;
+
+    @media (max-width: 728px) {
+        display: block;
+        gap: 0;
+    }
+
+    @media (max-width: 573px) {
+        display: flex;
+        gap: 36px;
+    }
+}
+
+.button_disp {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.employee_info {
+    // width: 30%;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 2rem;
+    border: 0.5px solid $arcs_neutral200;
+
+    @media (max-width: 944px) {
+        gap: 0;
+    }
+
+    @media (max-width: 480px) {
+        gap: 2rem;
+    }
+}
+
+.information {
+    line-height: 1rem;
+    width: 80%;
+
+    @media (max-width: 1320px) {
+        width: 70%;
+    }
+
+    @media (max-width: 945px) {
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        width: 70%;
+    }
+}
+
+.avatar_width {
+    width: 20%;
+
+    @media (max-width: 1320px) {
+        width: 30%;
+    }
+
+    @media (max-width: 944px) {
+        width: 0;
+        visibility: hidden;
+    }
+
+    @media (max-width: 572px) {
+        width: 30%;
+        visibility: visible;
+    }
+}
+
+.profile_avatar {
+    width: 8em;
+    height: 8em;
+
+    @media (max-width: 768px) {
+        width: 7em;
+        height: 7em;
+    }
+
+    @media (max-width: 480px) {
+        width: 8em;
+        height: 8em;
+    }
+}
+
+
+.button_manual {
+    width: 50%;
+
+    @media (max-width: 728px) {
+        width: 100%;
+
+        .step_2 {
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width: 573px) {
+        width: 50%;
+
+        .step_2 {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 573px) {
+    .hide_mobile {
+        visibility: hidden;
+        margin-top: -100px;
+    }
+}
+
+.visible_mobile {
+    visibility: hidden;
+    height: 0;
+
+    @media (max-width: 573px) {
+        visibility: visible;
+        height: auto;
+    }
+}
+
+.employee_upload_data {
+    color: $arcs_neutral50;
+    background-color: $arcs_primary300;
+    padding: 1.8em;
+    border-radius: 1em;
+    // width: 20rem
+
+    @media (max-width: 573px) {
+        margin-top: 25px;
+    }
+}
+
+#divider_container {
+    width: 100%;
+    background-color: $arcs_neutral500;
+}
+
+// styles for hr employee
+.title_container {
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+.date_title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: $arcs_neutral900;
+}
+
+.btn_cntr2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    // border: 0.5px solid $arcs_neutral200;
+}
+
+.btn_cntr2_row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.width_timekeeping {
+    width: 100%;
+}
+
+.btn_grp_title {
+    font-size: 23px;
+    font-weight: 700;
+    word-break: break-all;
+    color: black
+}
+
+.range_width {
+    width: 100%;
+    margin-bottom: 1em;
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+.table_heading_ctr {
+    margin-top: 1rem;
+
+    .heading_ctr {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text_left {
+        font-size: 1.12rem;
+    }
+
+    .text_right {
+        display: flex;
+        gap: 10rem;
+        font-size: 1.12rem;
+        margin-right: 1rem;
+    }
+
+    .divider_container_sub {
+        border-top: 0.09rem solid rgb(0, 0, 0);
+        margin-top: 0rem;
+    }
+}

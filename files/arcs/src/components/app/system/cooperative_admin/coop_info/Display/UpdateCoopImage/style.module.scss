@@ -1,0 +1,53 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    // padding: 25px;
+
+    .upload__image {
+        background-color: $arcs_neutral100;
+        width: 30rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed $arcs_neutral500;
+        color: $arcs_neutral500;
+    }
+
+
+    .txt_upload_image {
+        font-size: 1.2rem;
+        color: #555566;
+        margin-bottom: 0;
+    }
+
+    label {
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.5;
+        } 
+    }
+}
+
+.upload_image_container {
+    margin-left: 10px;
+}
+
+.button_upload_profile {
+    margin-top: 1rem;
+    width: 200px;
+    margin-left: 22px;
+    display: flex;
+    flex-direction: row;
+}

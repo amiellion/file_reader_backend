@@ -1,0 +1,133 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+	  
+
+#viewupdate-card {
+	box-shadow: 0px 5px 16px #e5e5e5;
+	border-radius: 10px;
+    width: 40rem;
+
+    &:hover{
+        box-shadow: 0px 5px 18px #cecaca;
+
+    }
+    .__position {
+        @extend .caption_large_regular;
+		color: #7F7F99;
+		margin-top: -4px;
+		text-align: left;
+	}
+
+    .__name {
+        @extend .caption_large_semibold;
+        color: #30304d;
+        text-align: left;
+    }
+
+    .__image img {
+        width: 100%;
+        height: auto;
+		padding-top: 0.625rem;
+	}
+
+    .__title{
+        font-size: 20px;
+        font-weight: bold;
+        color: #30304d;
+        margin-bottom: -10px;
+        margin-top: 10px;
+    }
+
+    .__details {
+		@extend .body_small_regular;
+		color: #555566;
+		padding: 20px 0px 20px 0px;
+	}
+
+    .__date {
+		@extend .footer_text_regular;
+		color: #7f7f99;
+		padding: 10px 0px 10px 0px;
+	}
+
+    .__editbtn{
+        width: 47%;
+        margin-right: 2px;
+    }
+
+    .__deletebtn{
+		width: 47%;
+		float: right;
+		margin-left: 2px;
+
+	}
+
+    .limit_text {
+        max-width: max-content;
+        display:flex;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+}
+
+#add-announce{
+    border: 1px dashed #7F7F99;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    padding: 150px 50px 150px 50px;
+    width: 40rem;
+
+        .__icon{
+            font-size: 30px;
+            color: #7F7F99;
+        }
+    
+        .__btn{
+            font-weight: 400;
+            font-size: 20px;
+            color: #7F7F99;
+        }
+
+}
+
+
+/*### Mobile Responsiveness ###*/
+@media (max-width: 767px) {
+	.__coopavatar{
+		margin-right: 20px;
+	}
+
+	.__deletebtn{
+		margin-top: 10px;
+		width: 100%!important;
+		margin-left: 0x;
+	}
+	.__editbtn{
+		width: 100%!important;
+		margin-right: 0px;
+	}
+    
+	#add-announce{
+		width: 100%;
+	}
+
+    #viewupdate-card {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+/*### Tablet Responsiveness ###*/
+@media  (min-width: 768px) and (max-width: 1024px) {
+    #add-announce{	
+        width: 100%;
+	}
+
+    #viewupdate-card {
+        width: 100%;
+    }
+}

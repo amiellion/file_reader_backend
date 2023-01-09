@@ -1,0 +1,68 @@
+
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.phone-confirmation{
+    text-align: center;
+    padding: 0px 300px 0px 300px;
+    
+    .__heading{
+        @extend .headingh1small;
+        color: $arcs_neutral900;
+        margin-top:-20px;
+    }
+    .__details{
+        @extend .body_small_regular;
+        color: $arcs_neutral700;
+        margin-top: 20px;
+    }
+
+}
+
+.__form{
+    padding: 0px 350px 0px 350px;
+    text-align: center;
+
+    .__details{
+        @extend .body_small_regular;
+        color: $arcs_neutral700;
+    }
+    .__btn{
+        width: 30%;
+        margin: 0px 0px 20px 0px;
+    }
+    .__subheading{
+        color: $arcs_neutral900;
+        @extend .subheading1semibold;
+        margin: 25px 0px 10px 0px;
+    }
+    .__hover{
+        cursor: pointer;
+        color: #595C97;
+        &:hover{
+            color: $arcs_neutral900;
+        }
+    }
+    .__asset{
+        @extend .body_small_regular;
+        color: #000;
+        text-align: center!important;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .__radiovalue{
+        display: inline-block;
+        @extend .subheading1regular;
+        color: $arcs_neutral900;
+    }
+    .__radiocol{
+        display: block;
+        // background-color: green;
+    }
+    .__radiorow{
+        padding-left: 60px!important;
+    }
+
+}
+

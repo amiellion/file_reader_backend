@@ -1,0 +1,29 @@
+.image {
+  background-color: #e6e7f0;
+  color: gray;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  border: 1px dashed #9385a1;
+  cursor: pointer;
+  width: 100%;
+  height: 312px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image .profile_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: 100%;
+}
+
+.image .text {
+  text-align: center;
+  margin-top: 125px;
+  font-size: x-large;
+}
+/*# sourceMappingURL=style.module.css.map */

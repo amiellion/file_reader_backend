@@ -1,0 +1,79 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+$DF: "Poppins";
+$BB: 1px solid #e5e5e5;
+
+//Header//
+.sub-txt {
+	font-weight: 600;
+	font-size: 24px;
+	color: #30304d;
+	margin-bottom: 4px;
+}
+
+	.main-txt {
+		font-size: 48px;
+		font-weight: 700;
+		color: #30304d;
+		margin-bottom: 12px;
+	}
+
+	#border-btm {
+		border-bottom: $BB;
+		margin-bottom: 30px;
+	}
+
+// Content //
+
+.title{
+	font-weight: bold;
+	font-size: 48px;
+	text-align: center;
+	color: #30304D;
+	padding: 40px 0px 10px 0px
+}
+
+.date{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	color: #30304D;
+	padding-bottom: 40px;
+}
+
+.content{
+	font-size: 18px;
+	text-align: left;
+	color: #30304D;
+	padding: 40px;
+		font-weight: 400;
+}
+
+.image{
+	text-align: center;
+}
+
+img.brdr_image{
+	border-radius: 20px;
+	box-shadow: 0px 5px 16px #e5e5e5;
+	width: 100%;
+}
+
+.image__width{
+    width: 100%;
+}
+.preview{
+    text-align: right;
+}
+
+/*### Mobile Responsiveness ###*/
+@media (max-width: 768px) {
+	.preview{
+		margin-bottom: 10px;
+	}
+}
+

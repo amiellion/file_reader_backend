@@ -1,0 +1,9 @@
+@import "scss_globals/mixins.scss";
+
+.container {
+	@include flex_center_full_w_h();
+
+	div {
+		@include flex_center_full_w_h();
+	}
+}

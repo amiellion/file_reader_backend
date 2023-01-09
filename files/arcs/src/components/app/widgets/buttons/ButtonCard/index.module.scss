@@ -1,0 +1,17 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.button_card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	gap: 2%;
+
+	span[role="img"] {
+		font-size: 1.5rem;
+	}
+}

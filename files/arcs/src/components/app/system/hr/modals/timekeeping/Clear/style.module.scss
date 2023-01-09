@@ -1,0 +1,30 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container__button {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

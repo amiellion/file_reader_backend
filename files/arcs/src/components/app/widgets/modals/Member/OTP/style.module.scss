@@ -1,0 +1,51 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+//** OTP **//
+#otp {
+    padding: 20px 30px 0px 30px;
+}
+
+// AVOID USING GLOBAL STYLE
+// svg {
+//     visibility: hidden;
+// }
+
+.icon {
+    text-align: center;
+}
+
+.main-txt {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #30304D;
+}
+
+.txt {
+    font-size: 18px;
+    text-align: center;
+    color: #30304D;
+}
+
+.input {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.input-txt {
+    margin-right: 2px;
+    width: 50px;
+}
+
+.continue {
+    margin: 20px 5px -40px 0px;
+    width: 37%;
+}
+
+.cancel {
+    margin: 20px 0px -40px 5px;
+    width: 37%;
+}

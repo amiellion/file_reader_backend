@@ -1,0 +1,69 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+.text__terms_privacy {
+	@extend .caption_large_regular;
+}
+
+.text__red_required {
+	color: $ant_red5;
+}
+
+.__title {
+	color: $arcs_neutral900;
+	font-size: 36px;
+	font-weight: 700;
+	padding-bottom: 40px;
+}
+
+.new-application {
+	padding-right: 50px;
+	border-right: 1px solid $arcs_neutral500;
+}
+
+.acc-type {
+	padding-left: 50px;
+}
+
+/*### Mobile Responsiveness ###*/
+@media (max-width: 768px) {
+	.new-application {
+		padding: 0px 0px 20px 0px;
+		border-right: 0px solid $arcs_neutral500;
+		border-bottom: 1px solid $arcs_neutral500;
+	}
+
+	.acc-type {
+		padding: 50px 0px 20px 0px;
+	}
+}
+.text__terms_privacy {
+	@extend .caption_large_regular;
+}
+
+.text__title {
+	@extend .heading2;
+	color: $arcs_neutral900;
+}
+
+.text__subtitle {
+	@extend .subheading1semibold;
+	color: $arcs_neutral900;
+}
+
+.text__bank_details {
+	@extend .body_large_regular;
+	color: $arcs_neutral900;
+}
+
+.text__mode_of_payment {
+    margin-top: 1rem;
+}
+
+.text__mode_of_payment,
+.text__mode_of_payment_title {
+    @extend .body_large_semibold;
+}
+

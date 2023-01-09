@@ -1,0 +1,111 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.conts {
+	width: 100%;
+	height: 100%;
+
+	// .container__action_button {
+	//     @
+	// }
+
+	.top_container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		width: 100%;
+		// max-width: 285px;
+
+		// .action_button {
+		// 	width: 50px;
+		// 	height: 50px;
+		// 	border-radius: 10px;
+		// 	padding: 10px;
+		// }
+		.top_title {
+			@extend .heading2;
+			font-size: 25px;
+			.action_button_name {
+				@extend .body_large_semibold;
+			}
+			.action_button {
+				width: max-content;
+				height: 50;
+				border-radius: 10px;
+			}
+		}
+		.top_status_text {
+			@extend .body_large_semibold;
+		}
+		.buttonText {
+			@extend .body_large_semibold;
+		}
+
+		@media screen and (max-width: 468px) {
+			// justify-content: center;
+			// align-items: flex-start;
+			// flex-direction: column;
+
+			.action_button_name {
+				// @extend .body_large_semibold;
+				display: none !important;
+			}
+			.action_button {
+			}
+		}
+	}
+
+	.mid_container {
+		// background-color: red;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-top: 5em;
+
+		.balance_status_container {
+			display: flex;
+			align-items: flex-end;
+			flex-direction: column;
+			flex-wrap: wrap;
+			width: 100%;
+
+			.plus_minus,
+			.update-status {
+				@extend .caption_large_regular;
+				color: $arcs_neutral900;
+			}
+
+			.current_balance {
+				@extend .heading2;
+				color: $arcs_neutral900;
+				word-break: break-all;
+			}
+			.plus_minus {
+				margin-bottom: -8px;
+			}
+			.update_status {
+				margin-top: -8px;
+			}
+
+			@media screen and (max-width: 400px) {
+				// justify-content: center;
+				// align-items: flex-start;
+				// flex-direction: column;
+				.current_balance {
+					color: $arcs_neutral900;
+					max-width: 9ch;
+					word-break: break-all;
+					font-size: 26px;
+				}
+			}
+		}
+	}
+
+	.button_container {
+		margin-top: 1rem;
+	}
+	// border: 1px solid black;
+}

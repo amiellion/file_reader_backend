@@ -1,0 +1,43 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.conts {
+	// @include flex_column_justify_between();
+	display: flex;
+	// align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	.title,
+	.content {
+		width: 100%;
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.title {
+		@extend .subheading2;
+		text-align: left;
+		color: black;
+	}
+
+	@media screen and (max-width: $small) {
+		.title {
+			font-size: 24px;
+		}
+		.value {
+			font-size: 42px;
+		}
+	}
+	// border: 1px solid black;
+}
+
+.read-or-hide{
+	color: darkgray;
+	cursor: pointer;
+}
+

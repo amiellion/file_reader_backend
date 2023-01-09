@@ -1,0 +1,30 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+.__btn{
+    width: 20%;
+    margin-right: 6px;
+    margin-top: 15px;
+}
+
+.__dropdwn{
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
+
+.select__dropdwn{
+    color: #9494B2;
+    padding-right: 40px;
+}
+
+.__space{
+    margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+    .__btn{
+        width: 100%;
+    }
+}

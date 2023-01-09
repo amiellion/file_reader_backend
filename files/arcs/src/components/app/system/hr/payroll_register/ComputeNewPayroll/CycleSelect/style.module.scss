@@ -1,0 +1,65 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.form_container {
+    font-family: 'Poppins';
+    font-style: normal;
+
+    .title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        color: #30304D;
+    }
+    
+    .date__selector {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        color: #30304D;
+        padding: 10px;
+    }
+    
+    .month, .year {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+        padding: 10px;
+        width: max-content;
+    }
+    
+    .payroll__cycle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        color: #30304D;
+        padding: 10px;
+    }
+    
+    .reminder {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        color: #30304D;
+    }
+    
+    .text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .divider {
+        background-color: $arcs_neutral500;
+    }
+    
+    .ant-picker-year-btn > *:first-child {
+        display: none;
+    }
+
+}

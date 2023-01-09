@@ -1,0 +1,131 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+//** Main Text **//
+.sub-txt {
+	font-weight: 600;
+	font-size: 36px;
+	color: #30304d;
+	margin-bottom: 4px;
+	padding-top: 50px;
+}
+
+#maintence-card {
+	box-shadow: 0px 6px 7px #3f3d3d61;
+	border-radius: 20px;
+	width: 40%;
+	margin: 50px 20px 0px 20px;
+	padding: 50px 70px 50px 70px;
+}
+
+.sub-txt__maintenance {
+	font-weight: 600;
+	font-size: 36px;
+	color: #30304d;
+	text-align: center;
+	margin: -20px 0px 10px 0px;
+}
+
+.sub-txt__icon {
+	font-weight: 600;
+	font-size: 60px;
+	color: #30304d;
+	text-align: center;
+	margin-bottom: -5px;
+}
+
+.txt {
+	font-weight: 400;
+	font-size: 18px;
+	color: #555566;
+}
+
+.txt-col {
+	font-weight: 400;
+	font-size: 18px;
+	color: #5250b4;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+}
+
+.close__button {
+	margin: auto;
+	width: max-content;
+}
+
+.button {
+	width: max-content;
+}
+
+.icon {
+	padding-right: 15px;
+}
+
+.activate__btn {
+	margin-top: -50px;
+}
+
+
+.referral_title {
+	@extend .heading3;
+}
+
+.referral_code {
+	@extend .heading1;
+	color: $arcs_primary200;
+	margin: 5px;
+}
+
+.hr-settings {
+	margin-top: 40px;
+	._txt {
+		color: $arcs_primary300;
+		@extend .body_large_regular;
+	}
+}
+
+.hr-employeeper{
+	border-top: 1px solid #e5e5e5;
+	margin-top: 30px;
+	._subtxt {
+		@extend .headingh1small;
+		color: $arcs_neutral900;
+		margin: 30px 0 10px 0;
+	}
+}
+
+//** Mobile Responsive **//
+@media (max-width: 767px) {
+	.right {
+		text-align: right;
+	}
+
+	.float {
+		float: right;
+	}
+
+	#maintence-card {
+		width: 100%;
+		margin: 40px 0 0 0;
+		padding: 30px;
+	}
+
+	.sub-txt__maintenance {
+		font-size: 24px;
+	}
+}
+
+
+/*### Tablet Responsiveness ###*/
+@media (min-width: 768px) and (max-width: 979px) {
+	#maintence-card {
+		width: 100%;
+		margin: 40px 0 0 0;
+		padding: 30px;
+	}
+}

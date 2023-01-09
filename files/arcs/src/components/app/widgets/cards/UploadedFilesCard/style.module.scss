@@ -1,0 +1,78 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+/*### Uploaded Files Page ###*/
+
+
+.card__container {
+    padding: 10px;
+    background-color: #F9F9FF;
+    border: 1px solid #D6D6E5;
+    margin-bottom: 40px;
+
+    @media (max-width: 480px) {
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+
+    @media (max-width: 1197px) {
+        text-align: center;
+    }
+
+    .file__brder {
+        border: 1px solid #D6D6E5;
+        padding: 14px 10px 0px 10px;
+        margin: 0 0 10px 0 !important;
+
+        @media (max-width: 480px) {
+            padding-bottom: 15px;
+        }
+
+        ._title {
+            color: $arcs_neutral700;
+            @extend .subheading1semibold;
+        }
+
+        ._desc {
+            @extend .subheading1regular;
+            color: $arcs_neutral700;
+            margin-top: -15px;
+        }
+
+        ._pdf-icon {
+            color: $arcs_primary300;
+            font-size: 50px;
+            width: 100%;
+            margin-top: 5px;
+
+
+        }
+
+        ._download-icon {
+            color: $arcs_neutral700;
+            font-size: 50px;
+            margin-top: 10px;
+
+            @media (max-width: 480px) {
+                font-size: 35px;
+                float: right;
+            }
+        }
+
+        ._delete-icon {
+            color: $arcs_neutral700;
+            font-size: 50px;
+            margin-top: 10px;
+            float: left;
+
+            @media (max-width: 480px) {
+                font-size: 35px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,14 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.divider_container {
+	margin: 1rem 0px;
+
+	.title {
+		@extend .heading2;
+	}
+	.subtitle {
+		@extend .body_small_regular;
+	}
+}

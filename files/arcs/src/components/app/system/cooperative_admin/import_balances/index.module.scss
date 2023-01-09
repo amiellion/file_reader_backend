@@ -1,0 +1,13 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    
+	.title {
+		@extend .heading2;
+	}
+	.subtitle {
+		@extend .body_small_regular;
+	}
+}

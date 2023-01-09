@@ -1,0 +1,378 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.conts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 98%;
+
+	// padding-left: 2%;
+	@media screen and(max-width: 612px) {
+		justify-content: space-around;
+	}
+}
+
+.top_container {
+	border-bottom: 1px solid $arcs_neutral300;
+	padding: 3em 0;
+
+	.conatiner_col__avatar {
+		width: 100% !important;
+		flex: 1;
+		margin: auto;
+		background-color: red;
+
+		.avatar_container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: stretch;
+			justify-content: center;
+			width: 100%;
+			margin: auto;
+			text-align: center;
+			background-color: red;
+
+			.my_avatar {
+				width: 100%;
+				margin: auto;
+			}
+
+			@media screen and (max-width: 680px) {}
+		}
+
+		@media screen and (max-width: 680px) {
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			padding-right: 6%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.avatar_container {
+				width: 100%;
+				margin: auto;
+				// padding-right: 6%;
+			}
+		}
+	}
+
+	.status_name_call {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		// padding-right: 5%;
+
+		.container__badge_approve {
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+
+			.inner_container__badge_name_call {
+				width: 100%;
+				align-self: stretch;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				gap: 15px;
+				// height: min-content;
+
+				.container__boardReso_approve {
+					.text_approved_on {
+						@extend .body_small_regular;
+						color: $arcs_confirm400;
+					}
+
+					.text_board_reso {
+						@extend .body_small_regular;
+						color: $arcs_primary300;
+					}
+
+					p {
+						margin-bottom: 0;
+						text-align: left;
+					}
+
+					.button_boardReso_conainer {
+						padding: 0;
+						width: min-content;
+						border-radius: 10px;
+
+						.button_boardReso_content {
+							text-align: left;
+							// background-color: red;
+							width: 100%;
+							padding: 0 5px;
+						}
+					}
+				}
+
+				.call_button {
+					margin-left: 0;
+					width: 75px;
+					border-radius: 30px;
+					padding: 8px 20px 32px 20px;
+				}
+			}
+
+			@media screen and (max-width: 650px) {
+				.inner_container__badge_name_call {
+					width: 100%;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					height: 125px;
+					gap: 0px 15px;
+					width: 300px;
+					margin: auto;
+
+					.container__boardReso_approve {
+						// width: 100vw;
+						text-align: center;
+
+						p {
+							text-align: center;
+						}
+
+						order: 3;
+					}
+
+					.call_button {
+						// align-self: flex-end;
+						// justify-self: flex-end;
+						margin-left: 0;
+						max-width: 75px;
+						border-radius: 30px;
+						// margin: 1000px;
+						order: 2;
+					}
+				}
+			}
+		}
+
+		.container__name_id {
+			margin-top: 0;
+
+			p {
+				margin: 0;
+			}
+
+			.member_name {
+				@extend .heading2;
+				color: $arcs_neutral900;
+			}
+
+			.member_id {
+				// @extend .body_large_regular;
+				color: $arcs_neutral900;
+				word-break: break-all;
+				width: 100%;
+			}
+
+			.member_decline_reason {
+				color: $arcs_error400;
+			}
+
+			@media screen and (max-width: 680px) {
+				width: 100%;
+
+				.member_name,
+				.member_id {
+					text-align: center;
+					width: 100%;
+					// padding-right: 4%;
+				}
+
+				.member_id {
+					// @extend .body_large_regular;
+					width: 85%;
+					// max-width: 45ch;
+					word-break: break-all;
+					text-align: center;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	.container_role_management_btn {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 15px 15px;
+		margin-top: 15px;
+
+		@media screen and (max-width: 680px) {
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+			margin-top: 35px;
+		}
+	}
+
+	.badge_pending {
+		margin: 10px 0;
+	}
+
+	.text__error_edit_role {
+		margin: 10px 0;
+		color: $arcs_error300;
+	}
+
+	@media screen and(max-width: 680px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.container_role_management_btn {
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+			margin-top: 35px;
+		}
+	}
+}
+
+.prof_info_cont {
+	margin-top: 15px;
+	margin-left: 30px;
+	align-items: center;
+
+
+	.name {
+		@extend .heading3small;
+	}
+
+	.key {
+		width: 200px;
+		color: $arcs_neutral700;
+	}
+
+	.value {
+		color: $arcs_neutral700;
+	}
+}
+
+.component-body {
+	overflow: auto;
+	padding: 2em;
+	height: 52vh;
+	overflow: auto;
+
+	.key_value_container {
+		margin: 2em 0;
+
+		.name {
+			@extend .subheading1;
+			color: $arcs_neutral900;
+		}
+
+		.key {
+			@extend .body_large_semibold;
+			color: $arcs_neutral900;
+		}
+
+		.value {
+			@extend .body_large_regular;
+			color: $arcs_neutral700;
+		}
+
+		@media screen and (max-width: $medium) {
+
+			.value {
+				word-break: break-word;
+				font-size: 16px;
+			}
+
+			.key {
+				min-width: 100ch;
+			}
+		}
+	}
+
+	@media screen and(max-width: 622px) {
+		height: 43vh;
+	}
+}
+
+.bottom_container {
+	display: flex;
+	padding-top: 2em;
+	align-items: center;
+	justify-content: flex-end;
+	border-top: 1px solid $arcs_neutral300;
+}
+
+.svg-size {
+	font-size: 25px;
+	color: #555566;
+}
+
+.txt-align {
+	margin-top: -26px;
+	padding-left: 40px;
+	color: #555566;
+}
+
+.txt-align-red {
+	margin-top: -26px;
+	padding-left: 40px;
+	color: #FF2C4F;
+}
+
+.svg-size-red {
+	font-size: 25px;
+	color: #FF2C4F;
+}
+
+.close-print {
+	width: 40%;
+	margin-right: 40px;
+
+	@media (max-width: 768px) {
+		width: 95%;
+		margin-right: 0px;
+		margin-top: -5px;
+	}
+	@media (min-width: 769px) {
+		width: 50%;
+	}
+}
+
+.footer-print {
+	margin-top: -67px;
+
+	@media (max-width: 768px) {
+		margin-top: 0px;
+		text-align: center;
+	}
+
+	@media (min-width: 769px ) {
+		margin-top: -64px;
+		text-align: right;
+		margin-left: 5px;
+	}
+}
+
+.setting-allign {
+	border-radius: 40px;
+	width: 7%;
+	padding: 8px 20px 32px 20px;
+
+	@media (max-width: 768px) {
+		width: 100%;
+		padding: 0px;
+		// margin-top: 10px;
+	}
+
+	@media (min-width: 768px) {
+		width: 10%;
+	}
+}

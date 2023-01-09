@@ -1,0 +1,35 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.conts {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: initial;
+	flex-direction: column;
+
+    .coop_name{
+        @extend .heading2;
+    }
+	.details_container {
+        width: 100%;
+        // @extend .body_large_regular;
+		div {
+			text-align: left;
+            color: $arcs_neutral600;
+		}
+	}
+
+	.button_container {
+		width: 100%;
+	}
+
+	.button_container {
+		margin-top: 1rem;
+	}
+	// border: 1px solid black;
+}
+
+

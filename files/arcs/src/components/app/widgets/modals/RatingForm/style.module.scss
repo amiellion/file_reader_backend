@@ -1,0 +1,50 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+
+    .title {
+        @extend .heading4;
+        text-align: center;
+    }
+
+    .sub {
+        @extend .caption_large_regular;
+        text-align: center;
+    }
+
+    .stars {
+        // border: 1px solid black;
+        font-size: xx-large;
+        width: 35%;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    .button {
+        // border: 1px solid black;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .badge {
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 12px;
+        border-radius: 100px;
+        max-width: max-content;
+        background-color: $arcs_neutral50;
+        border: 1px solid $arcs_primary400;
+        color: $arcs_primary400;
+    }
+
+    .badge:hover {
+        background-color: $arcs_primary400;
+        border: 1px solid $arcs_neutral200;
+        color: $arcs_neutral200;
+        cursor: pointer;
+    }
+}

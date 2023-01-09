@@ -1,0 +1,54 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.account_creation_step1 {
+    margin: auto;
+    padding: rem(50) rem(30);
+    width: 100%;
+    max-width: 750px;
+
+    @media (max-width: 768px) {
+        margin-top: -50px;
+    }
+
+    color: black;
+
+    .__section-title {
+        margin-top: 20px;
+        @extend .subheading1bold;
+        width: 100%;
+        border-bottom: 1px solid $arcs_neutral200;
+        padding: 10px 0;
+        margin: 20px 0;
+        margin-top: 45px;
+    }
+
+    .__title {
+        @extend .heading1;
+        text-align: center;
+        color: $arcs_neutral900;
+
+    }
+
+    .__subtitle {
+        @extend .body_small_regular;
+        color: $arcs_neutral700;
+        text-align: center;
+
+    }
+
+    .__container-button {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .__title {
+        font-size: 40px !important;
+        line-height: 40px;
+    }
+}

@@ -1,0 +1,87 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.card__container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 420px;
+    max-height: 120%;
+    border: 1px solid #D6D6E5;
+    box-shadow: 0px 8px 16px rgba(59, 58, 130, 0.1);
+    font-family: 'Poppins';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    .date {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+    }
+
+    .date__value {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #6A6A80;
+    }
+
+    .divider {
+        width: 100%;
+        height: max-content;
+        background-color: $arcs_neutral500;
+    }
+
+    .employee {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+    }
+
+    .employee__name {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #6A6A80;
+    }
+
+    .employee__id {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+    }
+
+    .id__value {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #6A6A80;
+    }
+
+    .credit {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+    }
+
+    .credit__value {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #6A6A80;
+    }
+
+    .view__button {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+}

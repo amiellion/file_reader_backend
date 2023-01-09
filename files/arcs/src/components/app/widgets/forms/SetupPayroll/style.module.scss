@@ -1,0 +1,30 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+._txt {
+    @extend .subheading1semibold;
+    margin-top: 15px;
+}
+
+._det {
+    @extend .body_large_regular;
+}
+
+._cancel {
+    border: 1px solid transparent;
+    background: transparent;
+    color: $arcs_primary300;
+    @extend .body_large_regular;
+    padding: 0px;
+
+    &:hover {
+        border: 2px solid #fff
+    }
+}
+
+._save {
+    @extend .body_large_regular;
+    padding: 0px;
+}

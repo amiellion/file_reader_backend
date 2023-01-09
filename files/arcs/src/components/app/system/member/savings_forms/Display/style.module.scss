@@ -1,0 +1,46 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button__modal {
+	width: max-content;
+}
+
+.button__modal:hover {
+	cursor: pointer;
+}
+
+.text__terms_privacy {
+	@extend .caption_large_regular;
+}
+
+.text__title {
+	@extend .heading2;
+	color: $arcs_neutral900;
+}
+
+.text__subtitle {
+	@extend .subheading1semibold;
+	color: $arcs_neutral900;
+}
+
+.text__bank_details {
+	@extend .body_large_regular;
+	color: $arcs_neutral900;
+}
+
+.__title{
+    @extend .heading2;
+    color: $arcs_neutral900;
+}
+
+.__subtitle{
+    @extend .body_large_regular;
+    margin: -1.5625rem 0 1.875rem 0;
+}

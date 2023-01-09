@@ -1,0 +1,33 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .txt_container {
+        gap: 1rem;
+    }
+
+    .txt_title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: $arcs_neutral900;
+    }
+
+    .txt_body {
+        font-size: 1.1rem;
+        color: $arcs_neutral500;
+    }
+
+    .container__button {
+        width: 50%;
+    
+        .button {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}

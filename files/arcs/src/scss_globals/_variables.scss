@@ -1,0 +1,255 @@
+:root {
+    --theme-primary: #0d6efd;
+    /*for react-select-search/style.css*/
+    --theme-input-shadow: #c2daff;
+}
+
+
+$root_primary: #5250B4;
+
+$small: 350px;
+$medium: 450px;
+$large: 990px;
+
+$xs: 468px;
+// ANTD BREAKPOINTS
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+
+$theme-primary: #0d6efd;
+$theme-input-shadow: #c2daff;
+
+// Neutral
+$arcs_neutral50: #f9f9ff;
+$arcs_neutral100: #eeeeff;
+$arcs_neutral200: #d6d6e5;
+$arcs_neutral300: #a9a9cc;
+$arcs_neutral400: #9494b2;
+$arcs_neutral500: #7f7f99;
+$arcs_neutral600: #6a6a80;
+$arcs_neutral700: #555566;
+$arcs_neutral800: #38384d;
+$arcs_neutral900: #30304d;
+
+$arcs_primary50: #bebdff;
+$arcs_primary100: #9695e8;
+$arcs_primary200: #7170cf;
+$arcs_primary300: #5250b4;
+$arcs_primary400: #3b3a82;
+
+$arcs_error50: #ffdee3;
+$arcs_error100: #ff99aa;
+$arcs_error200: #ff5e79;
+$arcs_error300: #ff2c4f;
+$arcs_error400: #b21e37;
+
+$arcs_warning50: #ffe8c4;
+$arcs_warning100: #ffd699;
+$arcs_warning200: #ffbf5e;
+$arcs_warning300: #ffaa2c;
+$arcs_warning400: #c77e11;
+
+$arcs_confirm50: #cdfcdc;
+$arcs_confirm100: #a3e5b9;
+$arcs_confirm200: #68fc99;
+$arcs_confirm300: #30e46c;
+$arcs_confirm400: #25b053;
+
+$arcs_black: #000;
+$arcs_white: #fff;
+
+$ant_red1: #fff1f0;
+$ant_red2: #ffccc7;
+$ant_red3: #ffa39e;
+$ant_red4: #ff7875;
+$ant_red5: #ff4d4f;
+$ant_red6: #f5222d;
+$ant_red7: #cf1322;
+$ant_red8: #a8071a;
+$ant_red9: #820014;
+$ant_red10: #5c0011;
+
+$ant_volcano1: #fff2e8;
+$ant_volcano2: #ffd8bf;
+$ant_volcano3: #ffbb96;
+$ant_volcano4: #ff9c6e;
+$ant_volcano5: #ff7a45;
+$ant_volcano6: #fa541c;
+$ant_volcano7: #d4380d;
+$ant_volcano8: #ad2102;
+$ant_volcano9: #871400;
+$ant_volcano10: #610b00;
+
+$ant_orange1: #fff7e6;
+$ant_orange2: #ffe7ba;
+$ant_orange3: #ffd591;
+$ant_orange4: #ffc069;
+$ant_orange5: #ffa940;
+$ant_orange6: #fa8c16;
+$ant_orange7: #d46b08;
+$ant_orange8: #ad4e00;
+$ant_orange9: #873800;
+$ant_orange10: #612500;
+
+$ant_gold1: #fffbe6;
+$ant_gold2: #fff1b8;
+$ant_gold3: #ffe58f;
+$ant_gold4: #ffd666;
+$ant_gold5: #ffc53d;
+$ant_gold6: #faad14;
+$ant_gold7: #d48806;
+$ant_gold8: #ad6800;
+$ant_gold9: #874d00;
+$ant_gold10: #613400;
+
+$ant_yellow1: #feffe6;
+$ant_yellow2: #ffffb8;
+$ant_yellow3: #fffb8f;
+$ant_yellow4: #fff566;
+$ant_yellow5: #ffec3d;
+$ant_yellow6: #fadb14;
+$ant_yellow7: #d4b106;
+$ant_yellow8: #ad8b00;
+$ant_yellow9: #876800;
+$ant_yellow10: #614700;
+
+$ant_lime1: #fcffe6;
+$ant_lime2: #f4ffb8;
+$ant_lime3: #eaff8f;
+$ant_lime4: #d3f261;
+$ant_lime5: #bae637;
+$ant_lime6: #a0d911;
+$ant_lime7: #7cb305;
+$ant_lime8: #5b8c00;
+$ant_lime9: #3f6600;
+$ant_lime10: #254000;
+
+$ant_green1: #f6ffed;
+$ant_green2: #d9f7be;
+$ant_green3: #b7eb8f;
+$ant_green4: #95de64;
+$ant_green5: #73d13d;
+$ant_green6: #52c41a;
+$ant_green7: #389e0d;
+$ant_green8: #237804;
+$ant_green9: #135200;
+$ant_green10: #092b00;
+
+$ant_cyan1: #e6fffb;
+$ant_cyan2: #b5f5ec;
+$ant_cyan3: #87e8de;
+$ant_cyan4: #5cdbd3;
+$ant_cyan5: #36cfc9;
+$ant_cyan6: #13c2c2;
+$ant_cyan7: #08979c;
+$ant_cyan8: #006d75;
+$ant_cyan9: #00474f;
+$ant_cyan10: #002329;
+
+$ant_blue1: #e6f7ff;
+$ant_blue2: #bae7ff;
+$ant_blue3: #91d5ff;
+$ant_blue4: #69c0ff;
+$ant_blue5: #40a9ff;
+$ant_blue6: #1890ff;
+$ant_blue7: #096dd9;
+$ant_blue8: #0050b3;
+$ant_blue9: #003a8c;
+$ant_blue10: #002766;
+
+$ant_geekblue1: #f0f5ff;
+$ant_geekblue2: #d6e4ff;
+$ant_geekblue3: #adc6ff;
+$ant_geekblue4: #85a5ff;
+$ant_geekblue5: #597ef7;
+$ant_geekblue6: #2f54eb;
+$ant_geekblue7: #1d39c4;
+$ant_geekblue8: #10239e;
+$ant_geekblue9: #061178;
+$ant_geekblue10: #030852;
+
+$ant_purple1: #f9f0ff;
+$ant_purple2: #efdbff;
+$ant_purple3: #d3adf7;
+$ant_purple4: #b37feb;
+$ant_purple5: #9254de;
+$ant_purple6: #722ed1;
+$ant_purple7: #531dab;
+$ant_purple8: #391085;
+$ant_purple9: #22075e;
+$ant_purple10: #120338;
+
+$ant_magenta1: #fff0f6;
+$ant_magenta2: #ffd6e7;
+$ant_magenta3: #ffadd2;
+$ant_magenta4: #ff85c0;
+$ant_magenta5: #f759ab;
+$ant_magenta6: #eb2f96;
+$ant_magenta7: #c41d7f;
+$ant_magenta8: #9e1068;
+$ant_magenta9: #780650;
+$ant_magenta10: #520339;
+
+$ant_neutral1: #ffffff;
+$ant_neutral2: #fafafa;
+$ant_neutral3: #f5f5f5;
+$ant_neutral4: #f0f0f0;
+$ant_neutral5: #d9d9d9;
+$ant_neutral6: #bfbfbf;
+$ant_neutral7: #8c8c8c;
+$ant_neutral8: #595959;
+$ant_neutral9: #434343;
+$ant_neutral10: #262626;
+$ant_neutral11: #1f1f1f;
+$ant_neutral12: #141414;
+$ant_neutral13: #000000;
+
+
+
+$menu_selected: lighten($arcs_primary400, 45%);
+$menu_item_selected_bg: $arcs_neutral100;
+$menu_submenu_open_bg: $arcs_neutral50;
+$menu_item_text_base_color: $arcs_neutral900;
+// :export {
+// 	theme-primary: $theme-primary;
+// 	theme-input-shadow: $theme-input-shadow;
+
+// 	// Neutral
+// 	arcs_neutral50: $arcs_neutral50;
+// 	arcs_neutral100: $arcs_neutral100;
+// 	arcs_neutral100: $arcs_neutral100;
+// 	arcs_neutral300: $arcs_neutral300;
+// 	arcs_neutral400: $arcs_neutral400;
+// 	arcs_neutral500: $arcs_neutral500;
+// 	arcs_neutral600: $arcs_neutral600;
+// 	arcs_neutral700: $arcs_neutral700;
+// 	arcs_neutral800: $arcs_neutral800;
+// 	arcs_neutral900: $arcs_neutral900;
+
+// 	arcs_primary50: $arcs_primary50;
+// 	arcs_primary100: $arcs_primary100;
+// 	arcs_primary200: $arcs_primary200;
+// 	arcs_primary300: $arcs_primary300;
+// 	arcs_primary400: $arcs_primary400;
+
+// 	arcs_error50: $arcs_error50;
+// 	arcs_error100: $arcs_error100;
+// 	arcs_error200: $arcs_error200;
+// 	arcs_error300: $arcs_error300;
+// 	arcs_error400: $arcs_error400;
+
+// 	arcs_warning50: $arcs_warning50;
+// 	arcs_warning100: $arcs_warning100;
+// 	arcs_warning200: $arcs_warning200;
+// 	arcs_warning300: $arcs_warning300;
+// 	arcs_warning400: $arcs_warning400;
+
+// 	arcs_confirm50: $arcs_confirm50;
+// 	arcs_confirm200: $arcs_confirm200;
+// 	arcs_confirm100: $arcs_confirm100;
+// 	arcs_confirm300: $arcs_confirm300;
+// 	arcs_confirm400: $arcs_confirm400;
+// }

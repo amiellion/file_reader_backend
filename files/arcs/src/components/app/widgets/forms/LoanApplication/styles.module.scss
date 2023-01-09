@@ -1,0 +1,139 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.input_group {
+	@extend .caption_large_semibold;
+
+	& input,
+	& textarea {
+		background-color: $arcs_neutral50 !important;
+	}
+}
+
+.container__form {
+	.section__title {
+		@extend .subheading1semibold;
+		margin: 0;
+	}
+	.section__subtitle {
+		@extend .body_large_semibold;
+		margin: 0;
+	}
+	.section__personal_information {
+		// width: max-content; ** input field in personal information in mobile view is fix & not responsive
+		margin-bottom: 40px;
+
+		.container__years_of_stay {
+			max-width: 25ch;
+			margin-bottom: 35px;
+			@media screen and(min-width:1080px ) {
+				width: 100%;
+				max-width: 25vw;
+			}
+		}
+
+		@media screen and(min-width:1080px ) {
+			width: 100%;
+			max-width: 35vw;
+		}
+	}
+	.section__loan_information {
+		width: 100%;
+		@media screen and(min-width:1080px ) {
+		}
+	}
+
+	.section__references_main,
+	.section__references {
+		width: 100%;
+		margin-bottom: 40px;
+		padding-left: 2.5%;
+		@media screen and(min-width:1080px ) {
+		}
+	}
+	.section__references_main {
+		padding-left: 0;
+	}
+
+	.section__files {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.section__personal_information,
+	.section__loan_information {
+		@media screen and(min-width:768px ) {
+			max-width: 65vw;
+		}
+		@media screen and(min-width:1080px ) {
+			max-width: 35vw;
+		}
+	}
+	.section__references,
+	.section__personal_information,
+	.section__loan_information {
+		margin-bottom: 5em;
+	}
+	.container__tin {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.button_container {
+		margin: 50px 0;
+		width: max-content;
+	}
+}
+
+.text__select_loan_type {
+	@extend .subheading1semibold;
+	margin-bottom: 5px;
+}
+.text__subtitle {
+	@extend .caption_large_semibold;
+}
+.container__loan_information {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	height: max-content;
+
+	.container__key_value {
+		.text__key {
+			@extend .caption_large_semibold;
+			margin: 5px 0 1px;
+		}
+		.text__value {
+			@extend .caption_small;
+			margin: 0;
+		}
+	}
+}
+
+.divider__top,
+.divider__bottom {
+	background-color: $arcs_neutral200;
+}
+
+.divider__top {
+	margin: 15px 0 !important;
+	margin-bottom: 15px !important;
+}
+
+.divider__bottom {
+	margin: 15px 25 !important;
+}
+
+.container__other_fees {
+    margin: 5px;
+	padding: 0px 15px;
+}
+
+.text__other_fee_title {
+	@extend .caption_large_semibold;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}

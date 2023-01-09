@@ -1,0 +1,52 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .txt_upload {
+        font-size: 1.1rem;
+        color: $arcs_neutral500;
+        margin-bottom: 1rem;
+        
+    }
+
+}
+
+// from edit profile
+.upload_image_container {
+    margin-left: 22px;
+}  
+// from edit profile
+.button_upload_profile {
+    margin-top: 1rem;
+}
+
+.header {
+    @extend .heading3;
+    text-align: center;
+    word-break: break-all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

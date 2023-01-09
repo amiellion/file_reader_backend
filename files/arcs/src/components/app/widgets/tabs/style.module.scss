@@ -1,0 +1,20 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text__tab_name {
+	@extend .caption_large_semibold;
+}
+
+.text__tab_count {
+  background-color: $arcs_neutral100;
+  border-radius: 5rem ;
+  margin-left: .5rem;
+  padding: .2rem;
+}

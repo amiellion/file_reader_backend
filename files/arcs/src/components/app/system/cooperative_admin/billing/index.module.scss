@@ -1,0 +1,27 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.cards_container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	gap: 15px 15px;
+	width: 100%;
+	max-width: 682px;
+
+	@media screen and (max-width: 682px) {
+		flex-wrap: wrap;
+	}
+
+	.cards_lower {
+		align-self: flex-start;
+		justify-self: flex-start;
+	}
+}
+
+.next_payment_container {
+	margin: 15px 0 50px 0px;
+	max-width: 682px;
+}

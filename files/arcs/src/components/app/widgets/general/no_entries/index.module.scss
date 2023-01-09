@@ -1,0 +1,30 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	width: 100%;
+	height: 55vh;
+	// max-height: 100%;
+	// min-height: ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 20px 20px;
+
+
+    img {
+        width: 0.3vh;
+        height: auto;
+        min-width: 250;
+        min-height: "auto";
+    }
+    
+    .no_entries_text {
+        @extend .subheading1bold;
+        color: $arcs_neutral500;
+    }
+}
+

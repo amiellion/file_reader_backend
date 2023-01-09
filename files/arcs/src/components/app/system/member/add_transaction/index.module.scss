@@ -1,0 +1,15 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+}
+
+.title {
+	@extend .heading1;
+	color: $arcs_neutral900;
+}
+.subtitle {
+	@extend .heading2;
+	color: $arcs_neutral900;
+}

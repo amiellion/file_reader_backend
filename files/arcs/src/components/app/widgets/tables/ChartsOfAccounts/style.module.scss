@@ -1,0 +1,9 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.card_title {
+	margin: 8px 0;
+	@extend .subheading1bold;
+	color: $arcs_neutral900;
+}

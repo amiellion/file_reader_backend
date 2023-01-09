@@ -1,0 +1,28 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    padding: 20px;
+    width: 438px;
+
+    .title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        color: #30304D;
+        margin-bottom: 15px;
+    }
+    
+    .select__employee {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+        margin-bottom: 27px
+    }
+}

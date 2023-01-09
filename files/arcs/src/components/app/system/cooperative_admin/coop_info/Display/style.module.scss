@@ -1,0 +1,127 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+.add-btn {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.contact__details {
+    @extend .heading3;
+    padding-top: 40px;
+}
+
+.title__space {
+    padding: 15px 0px 5px 0px;
+    @extend .body_large_semibold;
+}
+
+.about__coop {
+    width: 70%;
+}
+
+// .upload__image{
+//     padding-right: 40px;
+// }
+
+.upload__image {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 100%;
+    height: 600px;
+}
+
+.upload__image btn {
+    height: 200px;
+}
+
+.title {
+    @extend .body_large_semibold;
+}
+
+.__upload-coop-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+
+
+
+    .__text {
+        @extend .caption_large_semibold;
+        align-items: center;
+        color: $arcs_neutral50;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+        visibility: hidden;
+        width: 100%;
+        transition: all 150ms ease-in-out;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        svg {
+            color: $arcs_neutral50;
+            width: 50px;
+            height: 50px;
+        }
+
+
+
+
+    }
+
+    .__image {
+        opacity: 1;
+        z-index: -100;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .__text {
+            visibility: visible;
+            background-color: rgba(0, 0, 0, .7);
+        }
+    }
+
+    .__container-loader {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, .4);
+        width: 100%;
+        height: 350px;
+
+        &:hover {
+            cursor: default;
+
+            .__text {
+                visibility: hidden;
+                background-color: rgba(0, 0, 0, .7);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about__coop {
+        width: 100%;
+    }
+}

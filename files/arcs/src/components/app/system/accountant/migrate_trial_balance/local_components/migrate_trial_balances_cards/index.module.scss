@@ -1,0 +1,44 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+.container__main--grid{
+    width: 100%;
+    max-width: 950px;
+}
+
+.container__migrate {
+    min-height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (max-width: 1320px) {
+        min-height: 275px;
+
+    }
+}
+
+
+
+.text__step {
+    @extend .body_large_semibold;
+    color: $arcs_primary300;
+    max-width: 15ch;
+
+}
+
+.text__body {
+    @extend .heading3;
+    color: $arcs_neutral900;
+    max-width: 15ch;
+
+    @media screen and (max-width: 550px) {
+        min-height: 275px;
+        word-break: break-all;
+        max-width: 15ch;
+    }
+}

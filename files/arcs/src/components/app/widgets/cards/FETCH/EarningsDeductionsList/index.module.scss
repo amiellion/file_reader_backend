@@ -1,0 +1,77 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+._border-btns {
+    margin-top: 30px;
+
+    ._cancel {
+        border: 1px solid transparent;
+        background: transparent;
+        color: $arcs_primary300;
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+
+    ._save {
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+}
+
+
+._border-earnings {
+    border: 1px solid $arcs_neutral300;
+
+    ._add-earnings {
+        border: 1px solid transparent !important;
+        padding: 12px 0px 36px 0px !important;
+    }
+
+    ._space {
+        padding: 0px !important;
+    }
+
+}
+
+._title {
+    @extend .body_large_semibold;
+    color: $arcs_neutral900;
+    border-bottom: 1px solid $arcs_neutral900;
+    margin-bottom: 20px;
+
+
+
+    ._tooltip {
+        background-color: $arcs_white !important;
+        color: $arcs_neutral900;
+        padding: 15px;
+
+        border-radius: 15px !important;
+
+        ._desc {
+            @extend .body_large_semibold;
+            color: $arcs_primary300;
+            margin-bottom: -2px;
+        }
+
+        ._sub {
+            @extend .body_large_regular;
+            color: $arcs_neutral600;
+            margin-bottom: -5px;
+        }
+    }
+
+    ._icon {
+        margin-left: 20px
+    }
+}

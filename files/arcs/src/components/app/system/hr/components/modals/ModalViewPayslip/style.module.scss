@@ -1,0 +1,16 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+// .cotnainer_modal_view_payslip {
+
+
+// }
+.cotnainer_modal_view_payslip {
+
+    div.ant-modal-content>div.ant-modal-footer {
+        display: none !important;
+    }
+
+    // display: none !important
+}

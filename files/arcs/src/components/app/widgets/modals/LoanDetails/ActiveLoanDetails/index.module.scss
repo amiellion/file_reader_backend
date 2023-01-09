@@ -1,0 +1,142 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.modal_content {
+	padding: 1.5em;
+	width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.modal_content_title {
+		@extend .heading1;
+		text-align: center;
+		color: $arcs_neutral900;
+		margin-bottom: 1em;
+	}
+
+	.chart_label__key {
+		@extend .subheading1semibold;
+		color: $arcs_neutral900;
+	}
+	.chart_label__value {
+		@extend .body_large_regular;
+		color: $arcs_neutral500;
+	}
+
+	.container__archive_button {
+		width: 143px;
+		margin-bottom: 10px;
+	}
+	.button__archive {
+		width: 143;
+	}
+	.text__button_desc {
+		color: $arcs_neutral300;
+		@extend .caption_large_regular;
+	}
+
+	.section__loanDetails {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		// background-color: red;
+
+		.inner_container__loanDetails {
+			width: 100%;
+
+			.container__name_loan_details {
+				display: flex;
+				align-items: flex-start;
+				flex-direction: column;
+				justify-content: space-around;
+
+				.container__left_section {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 25px 25px;
+					flex-direction: row;
+				}
+			}
+			.member_name {
+				margin-top: 0.5em;
+				@extend .heading3;
+				color: $arcs_neutral900;
+			}
+			.loan_details_left {
+				.key_value_container {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					flex-direction: row;
+					gap: 15px;
+					.key_value_text {
+						@extend .body_large_regular;
+						color: $arcs_neutral500;
+					}
+				}
+			}
+
+			.loan_details_middle {
+				margin-top: 58px;
+				height: 100%;
+				// width: max-content;
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				flex-direction: column;
+				.key {
+					@extend .subheading1semibold;
+					color: $arcs_neutral900;
+				}
+				.value {
+					@extend .body_large_regular;
+					color: $arcs_neutral500;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	gap: 25px 25px;
+	width: max-content;
+	margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+	.inner_container__loanDetails {
+		.container__name_loan_details {
+			align-items: center!important;
+			display: block!important;
+				.container__left_section {
+					display: block!important;
+				}
+		}
+	}
+
+	.image__center{
+		text-align: center;
+	}
+
+	.member_name {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	// .loan_details_left {
+	// 	.key_value_container {
+	// 		display: block!important;
+	// 	}
+	// }
+}

@@ -1,0 +1,44 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container__button {
+    display: flex;
+    gap: 2rem;
+}
+
+.header {
+    @extend .heading2;
+    text-align: center;
+    word-break: break-all;
+}
+
+.header2 {
+    @extend .heading3;
+    text-align: center;
+    word-break: break-all;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 18px;
+	font-weight: 600;
+
+}
+
+.icon_container {
+    color: $arcs_confirm400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.3em;
+}

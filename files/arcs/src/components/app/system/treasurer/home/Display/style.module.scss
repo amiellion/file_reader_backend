@@ -1,0 +1,60 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    @include card_shadow();
+    border-radius: 10px;
+    border: 0px;
+}
+
+.conts {
+	// @include flex_column_justify_between();
+	display: flex;
+	// align-items: center;
+	flex-direction: column;
+	// overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	.titlessss {
+		height: 500px;
+	}
+
+	// background-color:red;
+	.title,
+	.subtitle,
+	.value {
+		width: 100%;
+		padding: 0;
+	}
+
+	.title {
+		@extend .subheading1;
+		text-align: left;
+		color: black;
+	}
+	.value {
+		@extend .heading1;
+		text-align: end;
+		color: $arcs_primary300;
+		vertical-align: bottom;
+	}
+
+	@media screen and (max-width: $small) {
+		.title {
+			font-size: 24px;
+		}
+		.value {
+			font-size: 42px;
+		}
+	}
+	// border: 1px solid black;
+}
+
+.subtitle {
+    @extend .heading2;
+    margin: 0;
+    color: black;
+}

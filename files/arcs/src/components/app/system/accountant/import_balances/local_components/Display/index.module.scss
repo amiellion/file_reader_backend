@@ -1,0 +1,17 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	.title {
+		@extend .heading2;
+	}
+	.subtitle {
+		@extend .body_small_regular;
+	}
+}
+
+.button__download {
+	width: max-content;
+	margin-left: auto;
+}

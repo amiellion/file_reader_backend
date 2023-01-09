@@ -1,0 +1,21 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	border-radius: 10px;
+
+    .links {
+        // border: 1px solid black;
+
+        .clickable__1 {
+            width: 50%;
+            margin-left: 20px;
+        }
+
+        .clickable__2 {
+            width: 50%;
+            margin-left: 100px;
+        }
+    }
+}

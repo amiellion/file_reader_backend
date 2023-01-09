@@ -1,0 +1,52 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.choose_deposit_card__container {
+	height:340px;
+	@include flex_column_justify_between();
+	position: relative;
+	// align-items: center;
+	justify-content: flex-start;
+	
+		.choose_deposit_card__title {
+			@extend .heading2;
+			margin: 0;
+			text-align: center;
+		}
+
+		.choose_deposit_card__description {
+			@extend .body_large_regular;
+			margin: 0;
+			text-align: center;
+		}
+		.choose_deposit_card__button_container {
+			margin-top: 20px;
+		// 	position: absolute;
+		// 	left: 50%;
+		// 	transform: translateX(-50%);
+		// 	bottom: 5%;
+		// 	width: 30%;
+		// 	width: max-content;
+		}
+
+		.choose_deposit_card__icons {
+			color: $arcs_neutral500;
+		}
+}
+
+@media (max-width: 767px) {
+	.choose_deposit_card__container {
+		height:100%;
+
+		.choose_deposit_card__button_container {
+			margin-top: 5px;
+		}
+	}
+}
+
+// @media (min-width: 768px) and (max-width: 1024px) {
+// 	.choose_deposit_card__container {
+// 		height:400px;
+// 	}
+// }

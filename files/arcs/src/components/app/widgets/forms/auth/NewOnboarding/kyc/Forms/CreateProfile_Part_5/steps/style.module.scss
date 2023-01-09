@@ -1,0 +1,53 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	// margin: auto;
+	padding: rem(50) rem(30);
+	width: 100%;
+	max-width: 750px;
+
+	.refer_title {
+		@extend .heading1;
+		color: $arcs_neutral900;
+	}
+
+	.refer_subtitle {
+		@extend .subheading1semibold;
+		color: $arcs_neutral900;
+	}
+
+	.refer_paragraph {
+		@extend .body_small_regular;
+		color: $arcs_neutral500;
+		text-align: center;
+	}
+
+	.button_container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		.button {
+			max-width: 150px;
+			// margin: auto;
+		}
+	}
+}
+
+#divider_container {
+	width: 100%;
+	background-color: $arcs_neutral500;
+}
+
+.width__form {
+	width: 80%;
+	margin: 0 auto 0;
+
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+}

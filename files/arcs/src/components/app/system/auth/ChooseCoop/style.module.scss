@@ -1,0 +1,70 @@
+@import "components/mixins.scss";
+@import "scss_globals/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.container {
+	@include flex_center();
+	@include flex_column_justify_between();
+	// padding: rem(20) rem(10);
+
+	// div.ant-divider.ant-divider-horizontal.ant-divider-with-text.ant-divider-with-text-center {
+	// 	span {
+	// 		font-size: 100px !important;
+	// 	}
+	// }
+
+	// div {
+	// 	button {
+	// 		margin: 0.5rem;
+	// 	}
+	// }
+}
+
+.titleContainer {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+
+.dpContainer {
+	@include flex_center();
+	width: 50vw;
+	height: 50vw;
+	max-width: 250px;
+	max-height: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 5rem;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#divider_container {
+	width: 70%;
+	max-width: 500px;
+	::before,
+	::after {
+		border-color: $arcs_neutral300;
+	}
+
+	span {
+		color: $arcs_neutral300;
+		font-size: 10px;
+	}
+}
+
+.card_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@media screen and (max-width: 1157px) {
+		max-width: 850px !important;
+		// width: 770px !important;
+	}
+}

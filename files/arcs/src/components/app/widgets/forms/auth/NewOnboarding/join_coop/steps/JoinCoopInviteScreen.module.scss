@@ -1,0 +1,39 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__coop-code-page {
+    margin-left: auto;
+    margin-right: auto;
+
+    .__title {
+        @extend .heading1small;
+        text-align: center;
+        color: $arcs_neutral900;
+    }
+
+    .__loading {
+        @extend .heading1small;
+        text-align: center;
+        color: $arcs_neutral900;
+    }
+
+
+    .__subtitle {
+        @extend .body_large_regular;
+        text-align: center;
+        color: $arcs_neutral700;
+        margin: 0;
+        margin-bottom: 0 !important;
+    }
+
+    .__coop-image {
+        text-align: center;
+    }
+
+    .__submit-button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 120px;
+    }
+}

@@ -1,0 +1,37 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.container {
+	margin: auto;
+	// padding: rem(50) rem(30);
+}
+
+.container__password {
+	// margin: auto;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	// flex-wrap: wrap;
+	// gap: 25px 25px;
+}
+
+.container_inner__password {
+	// margin: auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 25px 25px;
+}
+
+.text__passwordHelper {
+	@extend .caption_small;
+	margin: 10px 0;
+   display: flex; 
+   align-items: center;
+}

@@ -1,0 +1,35 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.card_inner_container {
+	display: flex;
+	// align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.card_title {
+	@extend .subheading1bold;
+	color: $arcs_neutral900;
+}
+
+.card_content {
+	@extend .heading1;
+	color: $arcs_primary300;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.card_footer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 100%;
+}
+.footer_text {
+	text-align: right;
+	width: 100%;
+	margin: 0;
+	margin-top: 15%;
+}

@@ -1,0 +1,27 @@
+@import "components/mixins.scss";
+@import "scss_globals/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.container {
+	padding: rem(50) rem(30);
+	width: max-content;
+    // max-width: 1500px;
+	margin: auto;
+}
+
+.container_image {
+	@include flex_center_full_w_h();
+	height: auto;
+}
+.image {
+	width: 75%;
+}
+
+
+
+.container__card {
+    width: 350px;
+    padding: 5%;
+}

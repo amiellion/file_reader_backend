@@ -1,0 +1,71 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.conts {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    gap:.3em;
+
+	.coop_avatar {
+		margin: 15px;
+	}
+
+	.badge_manage_role {
+		color: $arcs_primary300;
+		border: 1px solid $arcs_primary300;
+		border-radius: 50px;
+		background-color: $arcs_primary50;
+		padding: 8px;
+	}
+
+	.badge_pending {
+		padding: 5px 10px;
+		background-color: $arcs_warning50;
+		border: 1px solid $arcs_warning400;
+		color: $arcs_warning400;
+		border-radius: 100px;
+	}
+
+	.coop_name {
+		@extend .heading3;
+		text-align: center;
+		word-break: break-all;
+	}
+
+	.coop_name_shrink {
+		@extend .heading3;
+		font-size: 15px;
+		text-align: center;
+		word-break: break-all;
+	}
+
+	.details_container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: max-content;
+        gap: .8rem;
+		.details {
+			@extend .body_large_regular;
+			margin: 0;
+			width: max-content;
+			color: $arcs_neutral600;
+			text-align: center !important;
+		}
+	}
+
+	.button_container {
+		width: 150px;
+	}
+
+
+	.button_container {
+		margin-top: 1rem;
+	}
+
+}

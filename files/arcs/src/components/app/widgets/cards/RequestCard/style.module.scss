@@ -1,0 +1,67 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.card__container {
+    padding: 20px;
+    width: 100%;
+    max-height: 120%;
+    border: 1px solid #D6D6E5;
+    box-shadow: 0px 8px 16px rgba(59, 58, 130, 0.1);
+    font-family: 'Poppins';
+    font-style: normal;
+
+    .date {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #30304D;
+    }
+
+    .date__value {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #6A6A80;
+    }
+
+    .divider {
+        background-color: $arcs_neutral500;
+    }
+
+    .title_type {
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: $arcs_neutral900;
+        margin-top: 0.4rem;
+    }
+
+    .title_type2 {
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: $arcs_neutral900;
+    }
+
+    .text_body {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: $arcs_neutral500;
+    }
+
+    .view__button {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    // Badge Stylings
+    .badge_manage_role {
+        color: $arcs_confirm400;
+        border: 1px solid $arcs_confirm400;
+        border-radius: 50px;
+        background-color: $arcs_confirm50;
+        padding: 4px 8px;
+        margin-top: 10px;
+    }
+
+}

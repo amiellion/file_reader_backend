@@ -1,0 +1,501 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+/** Reports **/
+
+.generate__report {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  background: #616164;
+  max-width: 100%;
+  border: 1px solid #616164;
+}
+
+.generate__report__operations {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  background: #5250b4;
+  border: 1px solid #5250b4;
+}
+
+.generate__report__operations__pdf {
+  font-size: 18px;
+  font-weight: 400;
+  float: right;
+  text-align: center;
+  color: #fff;
+  background: #5250b4;
+  padding-bottom: 30px;
+  border: 1px solid #5250b4;
+  margin-right: 20px;
+}
+
+.btn__pdf__margin {
+  margin-top: 20px;
+}
+
+.generate__report__pdf {
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 1005;
+  text-align: center;
+  color: #fff;
+  background: #5250b4;
+  border: 1px solid #5250b4;
+}
+
+.date__range {
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  margin: 40px 0px 10px 0px;
+}
+
+.date__filter {
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+
+.btn__menu {
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  border-radius: 0px;
+  margin: 10px;
+  max-height: 100%;
+  height: 60px;
+  box-shadow: 0px 4px 6px #d5d2d2;
+  justify-content: center;
+  border: 1px solid #7f7f99;
+  background-color: #eeeeff;
+  // justify-content: center;
+  // align-items: center;
+  // display: flex;
+  width:95%;
+
+  &:hover {
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #7170cf
+  }
+
+  &:focus {
+    border: 1px solid #3b3a82 !important;
+    background-color: #9695e8 !important;
+    border-radius: 0px!important;
+    outline: 0!important;
+  }
+
+  &:active {
+    border: 1px solid #3b3a82 !important;
+    background-color: #9695e8 !important;
+    border-radius: 0px!important;
+    outline: 0!important;
+  }
+}
+
+
+#display__sheet {
+  box-shadow: 0px 6px 7px #d5d2d2;
+  width: 8.5in;
+  height: max-content;
+  margin: 50px auto;
+  border-collapse: collapse;
+  padding: 50px 30px 40px 30px;
+  overflow: auto;
+}
+
+.title__reports {
+  font-weight: 700;
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.title__reports__coop {
+  font-weight: 700;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+.table {
+  margin: 0 auto;
+}
+
+.table__monthly {
+  background: #d7d6ff;
+  @extend .body_small_semibold;
+  color: #000;
+  width: 100%;
+}
+
+.table__number {
+  text-align: right;
+}
+
+.table__total {
+  width: 100%;
+  height: 60px;
+  @extend .body_large_semibold;
+  font-size: 15px;
+}
+
+// .table__total td {
+//   padding: 10px 20px 10px 20px;
+// }
+
+.table__monthly th {
+  padding: 7px 11px;
+  text-align: right;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+}
+
+.account {
+  text-align: left !important;
+}
+
+.table__rows {
+  padding-right: 50px;
+}
+
+.table__output td {
+  padding: 10px 10px;
+  border-bottom: 1px solid black;
+  @extend .body_small_regular;
+  color: #000;
+  font-size: 14px !important;
+}
+
+.statement__title {
+  @extend .body_large_semibold;
+  padding-top: 20px;
+}
+
+.statement__details {
+  padding-left: 20px;
+  @extend .body_small_regular;
+}
+
+.statement__details__l2 {
+  padding-left: 40px;
+  @extend .body_small_regular;
+}
+
+.statement__details__account {
+  padding-left: 60px;
+  @extend .body_small_regular;
+  // padding-bottom: 20px;
+}
+
+.statement__element {
+  @extend .body_small_regular;
+  padding-left: 20px;
+}
+
+.statement__output {
+  text-align: right;
+  @extend .body_small_regular;
+  margin-bottom: 5px;
+}
+
+.statement__output__right__noborder {
+  text-align: right;
+  @extend .body_small_regular;
+}
+
+.statement__output__right__border {
+  text-align: right;
+  @extend .body_small_regular;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.statement__output__right__bold {
+  text-align: right;
+  @extend .body_small_semibold;
+  border-top: 1px solid #000;
+}
+
+.title__daterange {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.title__product {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.generate__report__state__operations {
+  float: right;
+  font-size: 18px;
+}
+
+.width__total {
+  width: 100%;
+}
+
+.total {
+  padding-left: 20px;
+  @extend .body_large_semibold;
+  border-top: 1px solid #000;
+}
+
+.total__border {
+  padding-left: 20px;
+  @extend .body_large_semibold;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.total__liabilities {
+  padding-left: 20px;
+  @extend .body_large_semibold;
+  border-bottom: 1px solid #000;
+}
+
+.statement__output__right {
+  text-align: right;
+  @extend .body_small_regular;
+  border-top: 1px solid #000;
+}
+
+.statement__output__border {
+  text-align: right;
+  @extend .body_small_semibold;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.statement__output__liabilities {
+  text-align: right;
+  @extend .body_small_semibold;
+  border-bottom: 1px solid #000;
+}
+
+.statement__output__bold {
+  text-align: right;
+  @extend .body_small_semibold;
+  border-top: 1px solid #000;
+}
+
+.net__income__loss__output {
+  text-align: right;
+  @extend .body_large_semibold;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.net__income__loss {
+  @extend .body_large_semibold;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-left: 20px;
+}
+
+.consolidated {
+  width: 100%;
+}
+
+.product__component {
+  margin-top: -30px;
+}
+
+.date__picker {
+  width: 100%;
+  text-align: center;
+}
+
+.datepicker__fincon {
+  width: 100%;
+  text-align: center;
+}
+
+.date__monthly {
+  width: 100%;
+  text-align: center;
+}
+
+.date__financial {
+  width: 100%;
+  text-align: center;
+}
+
+.category {
+  @extend .body_small_semibold;
+  margin: 15px 0 2px 0px;
+}
+
+.top__border_cash {
+  padding-left: 20px;
+  //   @extend .body_large_semibold;
+  //   border-top: 1px solid #000;
+}
+
+.cash_string {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px 0px 3px 40px;
+}
+
+.number_right {
+  text-align: right;
+  font-weight: 500;
+}
+
+.border_topbot_cash {
+  // border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 0px 5px 0px;
+}
+
+.top_border_only {
+  border-top: 1px solid #000;
+  // border-bottom: 1px solid #000;
+  padding: 5px 0px 5px 0px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.border_tops {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 0px 5px 0px;
+}
+
+.border_tops_right {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: right;
+  padding: 5px 0px 5px 0px;
+}
+
+.top_bottom_border_only {
+  border-top: 1px solid #000;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: right;
+  padding: 5px 0px 5px 0px;
+}
+
+.border_topbot_right {
+  border-bottom: 1px solid #000;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 0px 5px 0px;
+  text-align: right;
+}
+
+.border_topbot_title {
+  border-top: 1px solid #000;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 0px 5px 0px;
+}
+
+/*### Mobile Responsiveness ###*/
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  .title__daterange {
+    text-align: center;
+  }
+
+  .generate__report {
+    max-width: 100%;
+    margin: -20px 0px 40px 0px;
+  }
+
+  .generate__report__pdf {
+    max-width: 100%;
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+
+  .generate__allign {
+    text-align: center;
+    width: 100%;
+  }
+
+  .date__picker {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  #display__sheet {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .product__component {
+    margin-top: 0px;
+  }
+
+  .generate__report__operations {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-top: -2px;
+  }
+
+  #display__sheet {
+    width: 100%;
+  }
+
+  .generate__report__operations__pdf {
+    margin-right: 0px;
+  }
+
+  .generate__report__pdf {
+    margin-bottom: 20px;
+  }
+
+  .title__daterange {
+    text-align: center;
+  }
+}
+
+.date__filter {
+  margin-bottom: -10px;
+}
+
+/*### Tablet Responsiveness ###*/
+@media (min-width: 768px) {
+  .date__picker {
+    margin-top: 0px;
+  }
+
+  .generate__report__operations__pdf {
+    margin-top: 0px;
+  }
+
+  .date__filter {
+    margin-bottom: 10px;
+  }
+
+
+}

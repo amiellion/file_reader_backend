@@ -1,0 +1,59 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+    margin: auto;
+	width:95vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	.image {
+		width: 50%;
+		min-width: 320px;
+		height: auto;
+		margin-bottom: 5%;
+		text-align: center;
+	}
+	.title {
+		@extend .heading1;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	.subtitle {
+		@extend .subheading1semibold;
+	}
+
+    .container__button{
+
+
+        .button__home{
+            display: flex;
+            padding: 20px 45px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+
+    }
+
+
+    @media screen and (max-width: $md) {
+        .image {
+            width: 65%;
+        }
+        .title {
+            font-size: 22px;
+        }
+        .subtitle {
+            font-size: 13px;
+        }
+    }
+}
+
+

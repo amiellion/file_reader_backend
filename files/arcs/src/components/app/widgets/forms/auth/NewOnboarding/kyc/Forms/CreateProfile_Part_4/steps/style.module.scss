@@ -1,0 +1,59 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	// margin: auto;
+	padding: rem(50) rem(30);
+	width: 100%;
+	max-width: 750px;
+
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// text-align: center;
+	// color: $arcs_error300;
+
+	.refer_title {
+		@extend .heading1;
+		color: $arcs_neutral900;
+	}
+
+	// .common_text {
+	// 	@extend .body_large_regular;
+	// 	color: $arcs_neutral900;
+	// }
+
+	// .coop_name {
+	// 	@extend .heading1;
+	// 	color: $arcs_neutral900;
+	//     margin: 0.5em;
+	// }
+
+	.refer_subtitle {
+		@extend .subheading1semibold;
+		color: $arcs_neutral900;
+	}
+
+	.button_container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		.button {
+			max-width: 150px;
+			// margin: auto;
+		}
+	}
+}
+
+.width__form {
+	width: 80%;
+	margin: 0 auto 0;
+
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+}

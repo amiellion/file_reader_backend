@@ -1,0 +1,118 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+
+.__container-component {
+    // background-color: red;
+    // max-width: max-content;
+    // overflow: auto;
+}
+
+
+.__container--print {
+    display: flex;
+    // margin: auto;
+    align-items: center;
+    width: max-content;
+    justify-content: center;
+    // width: 420mm;
+    // height: 594mm;
+    width: 8.5in;
+    height: 11in;
+    // width: 627.5px;F
+    // height: 814px;
+    padding: 28px 33px;
+    // background: #F9F9FF;
+    // border: 1px solid #9494B3;
+    // border-radius: 20px;
+}
+
+.main__container {
+    position: relative;
+    width: 607.5px;
+    height: max-content;
+    // margin: auto;
+    padding: 28px 33px;
+    background: #F9F9FF;
+    border: 1px solid #1d1d1d;
+    border-radius: 20px;
+    // overflow: scroll;
+
+    .modal__close-button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 28px;
+
+        svg {
+            color: $arcs_neutral900;
+            transform: scale(2);
+        }
+    }
+
+    .coop__name {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #5250B4;
+    }
+
+    .download__button--payslip {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        width: max-content;
+        height: 46px;
+        border: 1px solid #7F7F99;
+        border-radius: 100px;
+    }
+
+
+    .title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        // font-size: 24px;
+        line-height: 130%;
+        color: #30304D;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        .top {
+            font-size: 24px;
+        }
+
+        .sub {
+            font-size: 18px;
+        }
+    }
+
+    .value {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #6A6A80;
+        padding: 5px 0px 10px 0px;
+    }
+
+    .table {
+        width: 541.5px;
+        height: 282px;
+        border: 1px solid #A9A9CC;
+        border-collapse: collapse;
+
+        th,
+        td {
+            border: 1px solid #A9A9CC;
+            padding: 5px;
+        }
+
+        .table_details {
+            padding: 2px;
+        }
+    }
+}

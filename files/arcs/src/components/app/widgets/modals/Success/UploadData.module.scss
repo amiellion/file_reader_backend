@@ -1,0 +1,35 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.confirm_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	.confirm_title {
+		@extend .heading1;
+		color: $arcs_neutral900;
+		text-align: center;
+	}
+
+	.confirm_text {
+		@extend .subheading1regular;
+		text-align: center;
+	}
+}
+
+.footer {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 200px;
+	button {
+		width: min-content;
+	}
+}

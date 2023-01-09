@@ -1,0 +1,33 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__join-confirmation-page {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60vw;
+
+    .__like-icon {
+        text-align: center;
+    }
+
+    .__title {
+        @extend .heading1;
+        text-align: center;
+        color: $arcs_neutral900;
+        margin: 0;
+    }
+
+    .__subtitle {
+        @extend .subheading1regular;
+        text-align: center;
+        color: $arcs_neutral700;
+    }
+
+    .__submit-button {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

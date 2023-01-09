@@ -1,0 +1,45 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.modal_content {
+	padding: 1.5em;
+
+	.member_name {
+		margin-top: 0.5em;
+		@extend .heading3;
+		color: $arcs_neutral900;
+	}
+
+	.modal_content_title {
+		@extend .heading1;
+		text-align: center;
+		color: $arcs_neutral900;
+		margin-bottom: 1em;
+	}
+
+	.loan_details_left {
+		.key_value_container {
+			.key_value_text {
+				@extend .body_large_regular;
+				color: $arcs_neutral500;
+			}
+		}
+	}
+
+	.loan_details_right {
+		height: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-direction: column;
+		.key {
+			@extend .subheading1semibold;
+			color: $arcs_neutral900;
+		}
+		.value {
+			@extend .body_large_regular;
+			color: $arcs_neutral500;
+		}
+	}
+}

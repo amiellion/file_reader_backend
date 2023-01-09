@@ -1,0 +1,38 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__phone-confirmation-four {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .__mail-icon {
+        text-align: center;
+    }
+
+    .__title {
+        @extend .heading1small;
+        text-align: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: 360px) {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    .__subtitle {
+        @extend .subheading1regular;
+        text-align: center;
+    }
+
+    .__submit-button {
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

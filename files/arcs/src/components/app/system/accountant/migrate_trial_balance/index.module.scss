@@ -1,0 +1,30 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.__container--main-migrate-TB {
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-direction: column;
+	gap: 25px 50px;
+
+	.__text--1{
+        @extend .body_large_regular;
+        color: $arcs_neutral900; 
+        margin: 0;
+    }
+    .__text--2{
+        @extend .body_large_semibold;
+        color: $arcs_primary300; 
+        margin: 0;
+
+        &-success{
+            color: $arcs_confirm400;
+        }
+    }
+
+   
+}

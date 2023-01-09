@@ -1,0 +1,65 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.page__container {
+    overflow: auto;
+    scrollbar-color: #5250B4;
+    height: 100%;
+    max-height: 1000px;
+    padding-right: 21px;
+}
+
+.sort__selector {
+    padding: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.search__input, .range__picker {
+    padding-left: 5px;
+}
+
+.divider {
+    background-color: $arcs_neutral500;
+}
+
+.title_container {
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+.txt_title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $arcs_neutral900;
+}
+
+.input_container {
+    display: 'flex';    
+    flex-direction: 'row';
+    gap: 2rem
+}
+
+.date_title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: $arcs_neutral900;
+}
+
+.request_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.filter_container {
+    display:'flex';
+    flex-direction: 'row';
+    gap: '1rem'
+}

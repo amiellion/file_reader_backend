@@ -1,0 +1,58 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+// .container {
+// 	margin: auto;
+// 	padding: rem(25) rem(30);
+// 	max-width: 1200px;
+// }
+
+.progess_text {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.step_container {
+    max-width: 950px;
+    margin: auto;
+}
+
+.coop_name {
+    @extend .heading1;
+    color: $arcs_neutral900;
+    margin: 0.5em;
+
+    @media (max-width: 767px) {
+        font-size: 35px !important;
+    }
+}
+
+.form_state_container {
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.progress_bar {
+    display: flex;
+    gap: 1rem;
+    width: 600px;
+    margin: 0 auto;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.padding__form {
+	padding: 0 30rem 0 30rem;
+
+	@media (max-width: 767px) {
+		padding: 0px !important;
+	}
+}

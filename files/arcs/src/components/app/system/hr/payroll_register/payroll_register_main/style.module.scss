@@ -1,0 +1,43 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.page__container {
+    overflow: auto;
+    scrollbar-color: #5250B4;
+    height: 100%;
+    max-height: 600px;
+    padding-right: 21px;
+}
+
+.compute__payroll {
+    padding: 5px;
+
+    .range__picker, .sort__selector {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #000000;
+    }
+
+    .compute__button {
+        // position: absolute;
+        right: 0;
+        // padding: 20px;
+        width: 270px;
+
+        // @media screen and (max-width: 768px) {
+        //     position: relative;
+        // }
+    }
+
+}
+
+.divider {
+    background-color: $arcs_neutral500;
+}

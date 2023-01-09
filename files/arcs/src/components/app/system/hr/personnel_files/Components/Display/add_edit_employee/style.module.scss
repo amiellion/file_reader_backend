@@ -1,0 +1,219 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+/*### Add Page Card ###*/
+.main__container {
+    ._width {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    ._title {
+        color: $arcs_primary300;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    ._sub {
+        color: $arcs_neutral900;
+        @extend .subheading1semibold;
+        margin: -10px 0 0 0;
+    }
+
+    ._sub_employee {
+        color: $arcs_neutral900;
+        @extend .subheading1semibold;
+    }
+
+    ._employee__filter {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    ._sub-hide {
+        visibility: hidden;
+        margin-top: -3px;
+
+        @media (max-width: 480px) {
+            margin-top: -50px;
+        }
+    }
+
+    ._sub-title {
+        color: $arcs_neutral900;
+        @extend .subheading1semibold;
+        margin-bottom: 5px;
+    }
+
+    ._sub-title-preview {
+        color: $arcs_neutral900;
+        @extend .subheading1semibold;
+        margin-bottom: 5px;
+        margin-top: 60px;
+    }
+
+
+    ._sub-title-upload {
+        color: $arcs_neutral900;
+        @extend .subheading1semibold;
+        margin: 62px 0 5px 0;
+    }
+
+    ._checkbox {
+        max-width: 40%;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            max-width: 50%;
+        }
+
+        @media (max-width: 480px) {
+            max-width: 100%;
+        }
+    }
+
+    ._margin-top {
+        margin-top: -25px;
+    }
+
+
+    ._icon {
+        padding-left: 10px;
+    }
+
+    .upload__image {
+        border: 2px dotted #ccc;
+        background: #eeeeff;
+        display: inline-block;
+        padding: 116px 40px;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    ._footer-fixed {
+        position: fixed;
+        bottom: 0;
+        right: 100px;
+        // left: 90px;
+        width: 100%;
+        height: 15%;
+        left: 0;
+        background-color: #d7d6ff;
+        padding: 35px;
+
+        ._txt {
+            color: $arcs_neutral900;
+            @extend .subheading1semibold;
+        }
+
+        background-position: center center;
+        background-size: cover;
+    }
+
+}
+
+._tooltip {
+    background-color: $arcs_white !important;
+    color: $arcs_neutral900;
+    padding: 15px;
+    border-radius: 15px !important;
+
+    ._desc {
+        @extend .body_large_semibold;
+        color: $arcs_primary300;
+        margin-bottom: -2px;
+    }
+
+    ._sub {
+        @extend .body_large_regular;
+        color: $arcs_neutral600;
+        margin-bottom: -5px;
+    }
+
+    ._icon-inner {
+        padding-right: 10px;
+    }
+
+}
+
+span.anticon.anticon-delete {
+    visibility: hidden !important;
+    color: transparent;
+    background-color: transparent;
+}
+
+.card__container {
+    padding: 20px;
+    background-color: #F9F9FF;
+    border: 1px solid #D6D6E5;
+    border-radius: 20px;
+
+    @media (max-width: 480px) {
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 1197px) {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    ._avatar {
+        width: 115px;
+        height: 115px;
+        margin-top: 10px;
+    }
+
+    ._id {
+        @extend .subheading1semibold;
+        color: $arcs_neutral800;
+        margin: 5px 0 0 0;
+    }
+
+    ._name {
+        @extend .subheading1semibold;
+        color: $arcs_primary300;
+        margin-bottom: 0;
+    }
+
+    ._desc {
+        @extend .subheading1regular;
+        color: $arcs_neutral600;
+        margin-bottom: 0;
+    }
+
+    ._details {
+        text-align: center;
+    }
+
+    ._badge {
+
+        background-color: $arcs_confirm50;
+        border: 1px solid $arcs_confirm400;
+        color: $arcs_confirm400;
+
+        @media (max-width: 480px) {
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 1197px) {
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    }
+
+}

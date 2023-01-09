@@ -1,0 +1,97 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+
+/*### Restore Archive Modal ###*/
+._border-btns {
+    margin-top: 30px;
+
+    ._cancel {
+        border: 1px solid transparent;
+        background: transparent;
+        color: $arcs_primary300;
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+
+    ._save {
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+}
+
+._back_to_personnel {
+    margin-top: 30px;
+}
+
+._title {
+    color: $arcs_neutral900;
+    @extend .headingh1small;
+    margin-bottom: 10px;
+}
+
+._desc {
+    color: $arcs_neutral600;
+    @extend .body_small_regular;
+    margin: -10px 0 -15px 0;
+}
+
+._desc-restore {
+    color: $arcs_neutral600;
+    @extend .body_small_regular;
+}
+
+._desc-add {
+    color: $arcs_primary300;
+    @extend .body_small_regular;
+}
+
+._icon-restore {
+    color: $arcs_warning300;
+    font-size: 70px;
+}
+
+._icon {
+    color: $arcs_primary300;
+    font-size: 70px;
+}
+
+.delete {
+    text-align: center;
+    padding: 30px 20px 0px 20px;
+
+    ._cancel {
+        border: 1px solid transparent;
+        background: transparent;
+        color: $arcs_primary300;
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+
+    ._save {
+        @extend .body_large_regular;
+        padding: 0px;
+    }
+
+    ._txt {
+        color: $arcs_neutral900;
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+._width {
+    max-width: 400px;
+}
+
+._width_addpersonnel {
+    max-width: 1000px !important;
+}
+
+._title_addpersonnel {
+    color: $arcs_neutral900;
+    @extend .headingh1small;
+    margin-bottom: 30px;
+    line-height: 40px;
+}

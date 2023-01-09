@@ -1,0 +1,17 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.container {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 700px;
+
+	p {
+		@extend .heading1small;
+		text-align: center;
+	}
+}

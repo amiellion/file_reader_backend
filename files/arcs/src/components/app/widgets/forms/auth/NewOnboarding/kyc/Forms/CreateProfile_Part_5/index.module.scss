@@ -1,0 +1,24 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+@import "components/mixins.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/* AUTH */
+
+.container {
+	margin: auto;
+	// padding: rem(50) rem(30);
+	max-width: 754px;
+}
+
+
+.refer_title {
+	@extend .heading1;
+	color: $arcs_neutral900;
+}
+
+.refer_subtitle {
+	@extend .body_large_regular;
+	color: $arcs_neutral900;
+}

@@ -1,0 +1,94 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.conts {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	.coop_avatar {
+		margin: 15px;
+	}
+
+	.badge_pending {
+		padding: 5px 10px;
+		background-color: $arcs_warning50;
+		border: 1px solid $arcs_warning400;
+		color: $arcs_warning400;
+		border-radius: 100px;
+	}
+
+	.coop_name {
+		@extend .heading3;
+	}
+	.details_container {
+		width: 112px;
+		@extend .body_large_regular;
+		div {
+			text-align: center;
+			color: $arcs_neutral600;
+		}
+	}
+
+	.button_container {
+		width: 150px;
+	}
+
+	// .top_container {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	align-items: center;
+	// 	flex-direction: row;
+	// 	width: 100%;
+	// 	// max-width: 285px;
+
+	// 	.top_title {
+	// 		@extend .heading1;
+	// 	}
+	// 	.buttonText {
+	// 		@extend .body_large_semibold;
+	// 	}
+	// }
+
+	// .mid_container {
+	// 	// background-color: red;
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	align-items: center;
+	// 	width: 100%;
+	// 	margin-top: 5em;
+
+	// 	.balance_status_container {
+	// 		display: flex;
+	// 		align-items: flex-end;
+	// 		flex-direction: column;
+	// 		flex-wrap: wrap;
+	// 		width: 100%;
+
+	// 		.plus_minus,
+	// 		.update-status {
+	// 			@extend .caption_large_regular;
+	// 			color: $arcs_neutral900;
+	// 		}
+
+	// 		.current_balance {
+	// 			@extend .heading2;
+	// 			color: $arcs_neutral900;
+	// 		}
+	// 		.plus_minus {
+	// 			margin-bottom: -8px;
+	// 		}
+	// 		.update_status {
+	// 			margin-top: -8plx;
+	// 		}
+	// 	}
+	// }
+	.button_container {
+		margin-top: 1rem;
+	}
+	// border: 1px solid black;
+}

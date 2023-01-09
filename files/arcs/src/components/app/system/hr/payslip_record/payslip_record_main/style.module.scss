@@ -1,0 +1,46 @@
+@import "scss_globals/mixins.scss";
+@import "scss_globals/variables.scss";
+@import "scss_globals/typography.scss";
+
+.page__container {
+    overflow: auto;
+    scrollbar-color: #5250B4;
+    height: 100%;
+    max-height: 600px;
+    padding-right: 21px;
+}
+
+.sort__selector {
+    padding: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.filter_inputs {
+    display: flex;
+    // flex-direction: row;
+    // float: right;
+    margin-top: 5px;
+
+    .search__input, .range__picker {
+        padding-left: 5px;
+
+        @media screen and (max-width: '768px') {
+            padding-top: 5px;
+        }
+    }
+
+    @media screen and (max-width: '768px') {
+        flex-direction: column;
+    }
+}
+
+
+.divider {
+    background-color: $arcs_neutral500;
+}
+
